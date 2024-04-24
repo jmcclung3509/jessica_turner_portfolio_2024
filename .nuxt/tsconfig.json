@@ -9,7 +9,7 @@
     "skipLibCheck": true,
     "strict": true,
     "allowJs": true,
-    "baseUrl": "/Users/jessicaturner/Desktop/portfolio-2023-the-latest",
+    "baseUrl": "/Users/jessicaturner/Desktop/jessica_turner_portfolio_2024",
     "noEmit": true,
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
@@ -18,64 +18,64 @@
     ],
     "paths": {
       "~": [
-        "/Users/jessicaturner/Desktop/portfolio-2023-the-latest"
+        "/Users/jessicaturner/Desktop/jessica_turner_portfolio_2024"
       ],
       "~/*": [
-        "/Users/jessicaturner/Desktop/portfolio-2023-the-latest/*"
+        "/Users/jessicaturner/Desktop/jessica_turner_portfolio_2024/*"
       ],
       "@": [
-        "/Users/jessicaturner/Desktop/portfolio-2023-the-latest"
+        "/Users/jessicaturner/Desktop/jessica_turner_portfolio_2024"
       ],
       "@/*": [
-        "/Users/jessicaturner/Desktop/portfolio-2023-the-latest/*"
+        "/Users/jessicaturner/Desktop/jessica_turner_portfolio_2024/*"
       ],
       "~~": [
-        "/Users/jessicaturner/Desktop/portfolio-2023-the-latest"
+        "/Users/jessicaturner/Desktop/jessica_turner_portfolio_2024"
       ],
       "~~/*": [
-        "/Users/jessicaturner/Desktop/portfolio-2023-the-latest/*"
+        "/Users/jessicaturner/Desktop/jessica_turner_portfolio_2024/*"
       ],
       "@@": [
-        "/Users/jessicaturner/Desktop/portfolio-2023-the-latest"
+        "/Users/jessicaturner/Desktop/jessica_turner_portfolio_2024"
       ],
       "@@/*": [
-        "/Users/jessicaturner/Desktop/portfolio-2023-the-latest/*"
+        "/Users/jessicaturner/Desktop/jessica_turner_portfolio_2024/*"
       ],
       "assets": [
-        "/Users/jessicaturner/Desktop/portfolio-2023-the-latest/assets"
+        "/Users/jessicaturner/Desktop/jessica_turner_portfolio_2024/assets"
       ],
       "assets/*": [
-        "/Users/jessicaturner/Desktop/portfolio-2023-the-latest/assets/*"
+        "/Users/jessicaturner/Desktop/jessica_turner_portfolio_2024/assets/*"
       ],
       "public": [
-        "/Users/jessicaturner/Desktop/portfolio-2023-the-latest/public"
+        "/Users/jessicaturner/Desktop/jessica_turner_portfolio_2024/public"
       ],
       "public/*": [
-        "/Users/jessicaturner/Desktop/portfolio-2023-the-latest/public/*"
+        "/Users/jessicaturner/Desktop/jessica_turner_portfolio_2024/public/*"
       ],
       "#app": [
-        "/Users/jessicaturner/Desktop/portfolio-2023-the-latest/node_modules/nuxt/dist/app"
+        "/Users/jessicaturner/Desktop/jessica_turner_portfolio_2024/node_modules/nuxt/dist/app"
       ],
       "#app/*": [
-        "/Users/jessicaturner/Desktop/portfolio-2023-the-latest/node_modules/nuxt/dist/app/*"
+        "/Users/jessicaturner/Desktop/jessica_turner_portfolio_2024/node_modules/nuxt/dist/app/*"
       ],
       "vue-demi": [
-        "/Users/jessicaturner/Desktop/portfolio-2023-the-latest/node_modules/nuxt/dist/app/compat/vue-demi"
+        "/Users/jessicaturner/Desktop/jessica_turner_portfolio_2024/node_modules/nuxt/dist/app/compat/vue-demi"
       ],
       "#vue-router": [
-        "/Users/jessicaturner/Desktop/portfolio-2023-the-latest/.nuxt/vue-router"
+        "/Users/jessicaturner/Desktop/jessica_turner_portfolio_2024/.nuxt/vue-router"
       ],
       "#imports": [
-        "/Users/jessicaturner/Desktop/portfolio-2023-the-latest/.nuxt/imports"
+        "/Users/jessicaturner/Desktop/jessica_turner_portfolio_2024/.nuxt/imports"
       ],
       "#build": [
-        "/Users/jessicaturner/Desktop/portfolio-2023-the-latest/.nuxt"
+        "/Users/jessicaturner/Desktop/jessica_turner_portfolio_2024/.nuxt"
       ],
       "#build/*": [
-        "/Users/jessicaturner/Desktop/portfolio-2023-the-latest/.nuxt/*"
+        "/Users/jessicaturner/Desktop/jessica_turner_portfolio_2024/.nuxt/*"
       ],
       "#components": [
-        "/Users/jessicaturner/Desktop/portfolio-2023-the-latest/.nuxt/components"
+        "/Users/jessicaturner/Desktop/jessica_turner_portfolio_2024/.nuxt/components"
       ]
     }
   },
@@ -83,14 +83,14 @@
     "./nuxt.d.ts",
     "../**/*",
     "../**/*",
-    "/Users/jessicaturner/Desktop/portfolio-2023-the-latest",
-    "/Users/jessicaturner/Desktop/portfolio-2023-the-latest/*",
-    "/Users/jessicaturner/Desktop/portfolio-2023-the-latest",
-    "/Users/jessicaturner/Desktop/portfolio-2023-the-latest/*",
-    "/Users/jessicaturner/Desktop/portfolio-2023-the-latest",
-    "/Users/jessicaturner/Desktop/portfolio-2023-the-latest/*",
-    "/Users/jessicaturner/Desktop/portfolio-2023-the-latest",
-    "/Users/jessicaturner/Desktop/portfolio-2023-the-latest/*"
+    "/Users/jessicaturner/Desktop/jessica_turner_portfolio_2024",
+    "/Users/jessicaturner/Desktop/jessica_turner_portfolio_2024/*",
+    "/Users/jessicaturner/Desktop/jessica_turner_portfolio_2024",
+    "/Users/jessicaturner/Desktop/jessica_turner_portfolio_2024/*",
+    "/Users/jessicaturner/Desktop/jessica_turner_portfolio_2024",
+    "/Users/jessicaturner/Desktop/jessica_turner_portfolio_2024/*",
+    "/Users/jessicaturner/Desktop/jessica_turner_portfolio_2024",
+    "/Users/jessicaturner/Desktop/jessica_turner_portfolio_2024/*"
   ],
   "exclude": [
     "../dist",

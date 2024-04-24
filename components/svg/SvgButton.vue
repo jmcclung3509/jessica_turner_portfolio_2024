@@ -32,11 +32,11 @@ const props = defineProps({
 	},
 	startColor: {
 		type: String,
-		default: "#ff7442"
+		default: "#A3FFD6"
 	},
 	endColor: {
 		type: String,
-		default: '#7f4ec3'
+		default: '#7BC9FF'
 	}
 });
 </script>
@@ -56,7 +56,7 @@ const props = defineProps({
 
 	svg {
 		fill: none;
-		stroke: $dark-purple;
+		stroke: $default-dark;
 		stroke-width: 2px;
 		transition: all 800ms ease;
 		position: relative;

@@ -1,29 +1,28 @@
-$default-white: #F4F4F4;
-$default-dark: #301F40;
+// $default-white: #fff;
+// $default-light: #F0F3FF;
+// $default-dark: #211951;
+// $default-purple: #1C1678;
+// $default-light-purple: #836FFF;
+// $default-blue: #7BC9FF;
+// $default-mint: #15F5BA;
 
-$extra-light-purple: #ECE4FB;
-$light-purple: #DDCDEA;
-$medium-purple: #B295DA;
-$dark-purple: #7F4EC3;
-$extra-dark-purple: #583688;
+$default-white: #fff;
+$default-dark: #061621;
+$default-dark-purple: #100D48;
+$default-purple: #7014f2;
+$default-light-purple: #d38ff0;
+// $default-blue: #7BC9FF;
+$default-blue: #006cfa;
+$default-dark-blue: #0E417B;
+$default-mint: #00f59b;
+$default-green: #00aa57;
+$default-dark-green: #00684a;
 
-$light-peach: #FFF4F0;
-$orange: #FF7442;
+
 
 
 //linear-gradients
-$linear-gradient-1: linear-gradient(149.25deg, $default-white 25%, $light-peach 40%, $extra-light-purple 67%,  $light-purple 80%, $medium-purple );
 
-
-$linear-gradient-2: linear-gradient($medium-purple, $dark-purple);
-$linear-gradient-3: linear-gradient(45deg, $medium-purple, $dark-purple);
-
-
-$linear-gradient-4: linear-gradient(77deg, $light-peach, $extra-light-purple, $light-purple, $extra-light-purple, $light-peach);
-
-$border-gradient: linear-gradient(45deg, $orange, $dark-purple);
-$overlay-gradient: linear-gradient( rgba($default-white, .8), rgba($light-peach, .8) , rgba($light-purple, .8), rgba($medium-purple, .8));
-$overlay-gradient-dark: linear-gradient(rgba($dark-purple, .8), rgba($default-dark, 1));
 
 
 
@@ -31,9 +30,10 @@ $overlay-gradient-dark: linear-gradient(rgba($dark-purple, .8), rgba($default-da
 
 //MEDIA QUERIES
 
-$break-small: 500px;
-$break-med: 768px;
+$break-small: 576px;
+$break-tablet: 768px;
 $break-large-tablet: 1024px;
-$break-large: 1200px;
-$break-xlarge: 1400px;
+$break-large: 1280px;
+$break-xlarge: 1440px;
 $break-xxlarge: 1600px;
+$break-jumbo: 1920px;

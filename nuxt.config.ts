@@ -68,12 +68,7 @@ export default defineNuxtConfig({
       devSourcemap: true,
     },
   },
-  tailwindcss: {
-    cssPath: false,
-    configPath: "tailwind.config.js",
 
-    config: {},
-  },
   build: {
     transpile: ["swiper"]
   },

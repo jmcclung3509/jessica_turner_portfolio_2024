@@ -7,7 +7,7 @@
 }
 
 body {
-	background: $linear-gradient-1;
+	background: $default-white;
 	color: $default-dark;
 	font-family: 'Roboto', sans-serif;
 	width: 100%;
@@ -69,7 +69,7 @@ ul.custom {
 			width: 15px;
 
 			border-radius: 50%;
-			border: 2px solid $orange;
+			border: 2px solid $default-purple;
 			display: inline-flex;
 			height: 15px;
 			margin-right: 20px;
@@ -131,64 +131,22 @@ ul.custom {
 	transform: translateY(0);
 	transition: all .5s;
 	opacity: 0.8;
-	background-image: linear-gradient(45deg, $medium-purple, $light-purple);
-
-	&.hollow {
-		position: relative;
-		opacity: 0.8;
-		border: 2px solid transparent;
-		background-origin: border-box;
-		background-clip: content-box, border-box;
-
-
-		&.purple {
-			background-image: linear-gradient($light-peach, $light-peach), linear-gradient(45deg, $medium-purple, $dark-purple);
-			color: $default-dark;
-
-			a {
-				padding: 10px;
-			}
-
+	background: $default-mint;
 
 			&:hover {
-				background-image: linear-gradient(45deg, $medium-purple, $dark-purple);
+				background: $default-light-purple;
 				color: $default-white;
-				border: 2px solid $dark-purple;
+				border: 2px solid $default-dark;
+				transform: translateY(-5px);
 
 			}
 		}
 
 
-		&.purple-orange {
-			background: linear-gradient($default-dark, $default-dark) padding-box, linear-gradient(45deg, $dark-purple, $orange) border-box;
-			color: $light-peach;
+		
 
-			display: flex;
-			align-items: center;
-			justify-content: center;
+	
 
-			a {
-				padding: 10px 16px;
-			}
-
-		}
-
-	}
-
-	&.contact {
-		opacity: 1;
-		background: linear-gradient($dark-purple, $dark-purple) padding-box, linear-gradient(133deg, $medium-purple, $light-purple) border-box;
-		border: 2px solid transparent;
-
-
-	}
-
-	&:hover {
-		transform: translateY(-12px);
-		opacity: 1;
-		box-shadow: 10px 10px 20px -4px rgba($default-dark, .4);
-	}
-}
 
 
 .button-container {
@@ -197,47 +155,10 @@ ul.custom {
 		justify-content: center;
 		align-items: center;
 		border-radius: 6px;
-
-		&.purple {
-			background-image: $linear-gradient-2;
-			padding: 10px 16px;
-			color: $light-peach;
-
-		}
 	}
+	
 }
 
-//Gradient text
-.gradient-purple {
-	background: -webkit-linear-gradient($extra-light-purple, $light-purple, $medium-purple);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-
-.gradient-text {
-	background: -webkit-linear-gradient(0deg, $orange, $dark-purple);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-
-	&.dark-purple {
-		background: -webkit-linear-gradient(260deg, $default-dark, rgba($default-dark, .5));
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-	}
-
-	&.rotating-gradient {
-		background: linear-gradient(0deg,
-		#573874, $dark-purple, $medium-purple, $light-purple, $extra-light-purple);
-		background-size: 400% 400%;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		width: 100%;
-		height: 100%;
-		background-position: 0 0;
-		animation: rotating-gradient 5s infinite alternate;
-
-	}
-}
 
 
 header.main {
@@ -268,7 +189,7 @@ header.main {
 	&.sticky-header {
 		position: fixed;
 		z-index: 2;
-		background-color: rgba($light-peach, .8);
+
 
 
 
@@ -288,7 +209,7 @@ header.main {
 		}
 	}
 
-	h4 {}
+
 
 }
 
@@ -298,7 +219,7 @@ header.main {
 	position: fixed;
 	top: 100px;
 
-	background: $default-dark;
+	background: $default-light-purple;
 	border-radius: 12px 0 0 12px;
 	overflow-y: hidden;
 	height: 100%;
@@ -315,7 +236,7 @@ header.main {
 		justify-content: flex-end;
 
 		a {
-			color: $light-peach;
+			color: $default-white;
 
 			&.button {
 				background: transparent;
@@ -349,7 +270,7 @@ header.main {
 	text-decoration: 0;
 	border: none;
 	transition: all .3s;
-	color: $medium-purple;
+	color:$default-light-purple;
 
 	&:before {
 		content: "";
@@ -360,7 +281,7 @@ header.main {
 		height: 2px;
 		bottom: -2px;
 		transition: width .3s ease-out;
-		background: linear-gradient(to right, $medium-purple, rgba($dark-purple, .4));
+		background: linear-gradient(to right, $default-light-purple, rgba($default-dark, .4));
 	}
 
 	&:hover {
@@ -369,41 +290,7 @@ header.main {
 		}
 	}
 
-	&.orange {
-
-		&:hover {
-			color: $orange;
-
-			&:before {
-				background: linear-gradient(to right, $orange, rgba($orange, .4));
-			}
-
-			a {
-				color: $orange;
-
-			}
-
-
-		}
-	}
-
-	&.purple {
-
-		&:hover {
-			color: $medium-purple;
-
-			&:before {
-				background: linear-gradient(to right, $medium-purple, rgba($medium-purple, .4));
-			}
-
-			a {
-				color: $medium-purple;
-
-			}
-
-
-		}
-	}
+	
 }
 
 
@@ -434,9 +321,7 @@ header.main {
 		}
 	}
 
-	&.purple {
-		color: $dark-purple;
-	}
+	
 
 	&:hover {
 		&:after {
@@ -456,53 +341,55 @@ header.main {
 section.hero {
 	height: 100vh;
 	position: relative;
+	background: $default-dark;
+	color: $default-white;
 
 
-		.circle_container {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			height: 10px;
-			transform-origin: left center;
+		// .circle_container {
+		// 	position: absolute;
+		// 	top: 50%;
+		// 	left: 50%;
+		// 	height: 10px;
+		// 	transform-origin: left center;
 
 
-			.circle {
-				position: absolute;
-				z-index: 9999;
-				border-radius: 100%;
-				background: rgba($default-white, .25);
-				left: 0;
-				top: 0;
-				opacity: 0;
-				animation-name: move;
-				animation-duration: 20s;
-				animation-iteration-count: infinite;
+		// 	.circle {
+		// 		position: absolute;
+		// 		z-index: 9999;
+		// 		border-radius: 100%;
+		// 		background: rgba($default-white, .25);
+		// 		left: 0;
+		// 		top: 0;
+		// 		opacity: 0;
+		// 		animation-name: move;
+		// 		animation-duration: 20s;
+		// 		animation-iteration-count: infinite;
 
-				&.circle-1 {
-					background: rgba($light-purple, .3);
-				}
+		// 		&.circle-1 {
+		// 			background: rgba($default-light-purple, .3);
+		// 		}
 
-				&.circle-2 {
-					background: rgba($orange, .15);
-				}
+		// 		&.circle-2 {
+		// 			background: rgba($orange, .15);
+		// 		}
 
-				&.circle-3 {
-					background: rgba($medium-purple, .3);
-				}
+		// 		&.circle-3 {
+		// 			background: rgba($medium-purple, .3);
+		// 		}
 
-				&.circle-4 {
-					background: rgba($dark-purple, .15);
-				}
+		// 		&.circle-4 {
+		// 			background: rgba($default-dark, .15);
+		// 		}
 
-				&.circle-5 {
-					background: rgba($light-peach, .3);
-				}
+		// 		&.circle-5 {
+		// 			background: rgba($light-peach, .3);
+		// 		}
 
-				&.circle-6 {
-					background: rgba($extra-light-purple, .3);
-				}
-			}
-		}
+		// 		&.circle-6 {
+		// 			background: rgba($extra-$default-light-purple, .3);
+		// 		}
+		// 	}
+		// }
 
 }
 
@@ -510,6 +397,8 @@ section.hero {
 
 section.info {
 	margin-top: 0 !important;
+	background: $default-white;
+
 
 	a {
 		font-weight: 300;
@@ -523,6 +412,7 @@ section.info {
 		padding-bottom: 2px;
 		width: fit-content;
 		margin: 0;
+	
 
 		&:before {
 			content: "";
@@ -531,12 +421,12 @@ section.info {
 			left: 0;
 			width: 0;
 			height: 2px;
-			background: $orange;
+			background: $default-blue;
 			transition: width 0.3s;
 		}
 
 		&.active {
-			color: $orange;
+			color: $default-blue;
 
 			&:before {
 				width: 100%;
@@ -544,10 +434,11 @@ section.info {
 		}
 
 		&:hover {
-			color: $orange;
+			color: $default-blue;
 
 		}
 	}
+}
 
 
 	.image-container {
@@ -564,44 +455,5 @@ section.info {
 			box-shadow: 0px 4px 4px 0px rgba(48, 31, 64, 0.4);
 		}
 
-		&:before {
-			content: "";
-			position: absolute;
-			width: 101%;
-			height: 81%;
-			background-image: linear-gradient(135deg, $light-peach, $extra-light-purple),
-				linear-gradient(45deg, $dark-purple, $orange);
-			border: 4px solid transparent;
-			background-origin: border-box;
-			background-clip: content-box, border-box;
-			left: 15px;
-			top: 15px;
-			z-index: 20;
-			border-radius: 4px;
-
-		}
-
-		&:after {
-
-			content: "";
-			background-image: linear-gradient(133deg, $orange, $dark-purple, $default-dark);
-			width: 100%;
-			height: 80%;
-			position: absolute;
-			left: 0px;
-			top: 0px;
-			opacity: 0.2;
-			z-index: 200;
-			transition: opacity 0.3s ease;
-			box-shadow: 0px 4px 4px 0px rgba(48, 31, 64, 0.4);
-		}
-
-		&:hover {
-			&:after {
-				opacity: .1;
-			}
-		}
-
-
-	}
+		
 }

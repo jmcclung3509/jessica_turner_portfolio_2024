@@ -13,12 +13,13 @@ module.exports = {
 	plugins: [],
 	theme: {
 		screens: {
-			sm: "640px",
-			md: "768px",
-			lg: "1024px",
-			xl: "1280px",
-			xxl: "1400px",
-			xxxl: "1600px"
+			xs: "500px",
+			sm: "768px",
+			md: "1024px",
+			lg: "1280px",
+			xl: "1440px",
+			xxl: "1600px",
+			jumbo: "1920px",
 		},
 		extend: {
 			fontSize: {
@@ -40,22 +41,20 @@ module.exports = {
 			colors: {
 				transparent: "transparent",
 				current: "currentColor",
-				"default-white": "#F4F4F4",
-				"default-dark": "#301F40",
-				"extra-light-purple": "#ECE4FB",
-				"light-purple": "#DDCDEA",
-				"medium-purple": "#B295DA",
-				"dark-purple": "#7F4EC3",
-				"light-peach": "#FFF4F0",
-				"orange": "#FF7442",
-				"extra-dark-purple": "#583688"
-			},
+				"default-white": "#fff",
+				"default-dark": "#061621",
+				"default-dark-purple": "#100D48",
+				"default-purple": "#7014f2",
+				"default-light-purple": "#d38ff0",
+				// "default-blue": "#7BC9FF",
+				"default-blue": "#006cfa",
+				"default-dark-blue": "#0E417B",
+				"default-mint": "#00f59b",
+				"default-green": "#00aa57",
+				"default-dark-green": "#00684a",
+							},
 			backgroundImage: {
-				"linear-gradient-1":
-					"linear-gradient(149.25deg, #F4F4F4 , #FFF4F0, #ECE4FB, #DDCDEA, #B295DA)",
-				"linear-gradient-4":
-					"linear-gradient(77deg,  #F4F4F4 , #FFF4F0, #ECE4FB, #FFF4F0, #F4F4F4)",
-					'border-gradient': "linear-gradient(#FF7442,#7F4EC3)"
+			
 			},
 			fontFamily: {
 				montserrant: ["Montserrat", "sans-serif"],

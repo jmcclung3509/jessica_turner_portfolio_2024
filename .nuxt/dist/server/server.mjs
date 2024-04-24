@@ -1,1 +1,1 @@
-export { default } from "file:///Users/jessicaturner/Desktop/portfolio-2023-the-latest/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs"
+export { default } from "file:///Users/jessicaturner/Desktop/jessica_turner_portfolio_2024/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs"

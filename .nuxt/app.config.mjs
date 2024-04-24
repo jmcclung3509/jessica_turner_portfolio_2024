@@ -1,5 +1,5 @@
 
-import { defuFn } from '/Users/jessicaturner/Desktop/portfolio-2023-the-latest/node_modules/defu/dist/defu.mjs'
+import { defuFn } from '/Users/jessicaturner/Desktop/jessica_turner_portfolio_2024/node_modules/defu/dist/defu.mjs'
 
 const inlineConfig = {}
 
