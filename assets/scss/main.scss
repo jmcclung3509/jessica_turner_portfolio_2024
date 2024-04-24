@@ -69,7 +69,7 @@ ul.custom {
 			width: 15px;
 
 			border-radius: 50%;
-			border: 2px solid $default-purple;
+			border: 2px solid $default-blue;
 			display: inline-flex;
 			height: 15px;
 			margin-right: 20px;
@@ -343,6 +343,10 @@ section.hero {
 	position: relative;
 	background: $default-dark;
 	color: $default-white;
+	background-image:  linear-gradient(rgba(6, 22, 33, 0.4), rgba(16, 13, 72, 0.5)), url("@/assets/images/home/background-image.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 
 
 		// .circle_container {
