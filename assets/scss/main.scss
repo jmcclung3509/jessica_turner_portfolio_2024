@@ -108,6 +108,9 @@ ul.custom {
 		}
 	}
 }
+.container{
+	max-width: 1280px;
+}
 
 .animate {
 	opacity: 0;
@@ -349,51 +352,6 @@ section.hero {
 	background-size: cover;
 
 
-		// .circle_container {
-		// 	position: absolute;
-		// 	top: 50%;
-		// 	left: 50%;
-		// 	height: 10px;
-		// 	transform-origin: left center;
-
-
-		// 	.circle {
-		// 		position: absolute;
-		// 		z-index: 9999;
-		// 		border-radius: 100%;
-		// 		background: rgba($default-white, .25);
-		// 		left: 0;
-		// 		top: 0;
-		// 		opacity: 0;
-		// 		animation-name: move;
-		// 		animation-duration: 20s;
-		// 		animation-iteration-count: infinite;
-
-		// 		&.circle-1 {
-		// 			background: rgba($default-light-purple, .3);
-		// 		}
-
-		// 		&.circle-2 {
-		// 			background: rgba($orange, .15);
-		// 		}
-
-		// 		&.circle-3 {
-		// 			background: rgba($medium-purple, .3);
-		// 		}
-
-		// 		&.circle-4 {
-		// 			background: rgba($default-dark, .15);
-		// 		}
-
-		// 		&.circle-5 {
-		// 			background: rgba($light-peach, .3);
-		// 		}
-
-		// 		&.circle-6 {
-		// 			background: rgba($extra-$default-light-purple, .3);
-		// 		}
-		// 	}
-		// }
 
 }
 
@@ -402,7 +360,10 @@ section.hero {
 section.info {
 	margin-top: 0 !important;
 	background: $default-white;
-
+	background-image: linear-gradient(90deg, rgba($default-white, .9), rgba($default-white, .9)), url("@/assets/images/home/about-bg.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 
 	a {
 		font-weight: 300;
@@ -460,4 +421,11 @@ section.info {
 		}
 
 		
+}
+
+section.projects{
+	background-image: linear-gradient(90deg, rgba($default-dark-purple, .5), rgba($default-dark-purple, .5)), url("@/assets/images/home/night-sky-bg.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }

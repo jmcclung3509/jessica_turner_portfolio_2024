@@ -1,38 +1,36 @@
 <template>
   <main class="relative">
     <section
-      class="section fold hero flex flex-col justify-center items-center relative h-[100vh]"
+      class="section fixed fold hero flex flex-col justify-center items-center h-[100vh]"
     >
       <div
-        class="text-box flex justify-center text-contianer items-center flex-col space-y-7 mt-[-200px]"
+        class="text-box relative flex justify-center text-contianer items-center flex-col space-y-7 mt-[-200px]"
       >
-        <h3 class="text-6xl text-default-white font-bold">Jessica Turner</h3>
-        <h1 class="text-3xl text-center caps text-default-light-purple">
+        <h3 class="text-6xl text-default-white font-bold text-center">Jessica Turner</h3>
+        <h1 class="text-center text-3xl caps text-default-light-purple">
           Web Developer
         </h1>
       </div>
-      <Transition name="fade-out">
-        <div class="show-button absolute bottom-10" v-if="!data.showMore" @click="showMore()">    
-		
-			 <img class="h-[40px]" src="@/assets/images/home/pointing-down.png" />
-       
-        </div></Transition
+
+      <div
+        class="show-button absolute bottom-10"
+        @mouseover="hoverShowMore" @mouseleave="data.hoverEnabled ? hoverShowMore() : null"
+        @click="showBottom()"
       >
+        <img class="h-[40px]" src="@/assets/images/home/pointing-down.png" />
+      </div>
       <Transition name="fade-in">
-        <div class="absolute bottom-10" v-if="data.showMore">
-       <span
-            class="text-default-white text-xs font-normal"
-    
-            >Show More</span
-          >
+        <div
+          class="absolute left-[53%] bottom-10"
+          v-show="data.showMore === true"
+        >
+          <span class="text-default-white text-xs font-normal">Show More</span>
         </div>
       </Transition>
     </section>
     <div class="bottom-container" id="bottom-container" v-show="data.showMore">
-		<SectionAbout/>
-		<SectionProjects/>
-     
-
+      <SectionAbout />
+      <SectionProjects />
     </div>
   </main>
 </template>
@@ -63,31 +61,37 @@ useHead({
 });
 
 const data = reactive({
-
   showMore: false,
+  hoverEnabled: true,
 });
 
-const showMore = () => {
+const showBottom = () => {
+	data.hoverEnabled = false;
   data.showMore = true;
   setTimeout(() => {
     scrollToBottom();
   }, 100);
 };
-
+console.log(data.showMore);
 const scrollToBottom = () => {
-	console.log('scrolling')
-  const bottomContainer = document.getElementById('bottom-container');
-  bottomContainer.scrollIntoView({ behavior: 'smooth' });
+
+  const bottomContainer = document.getElementById("bottom-container");
+  bottomContainer.scrollIntoView({ behavior: "smooth" });
 };
-
-
-onMounted(()=>{
+const hoverShowMore = ()=>{
+	data.showMore = true;
 	setTimeout(()=>{
-		useAnimateObserver();
-		useGoToAnchor();
-	}, 100)
+		data.showMore = false;
+	}, 1000)
+	}
 
-})
+
+
+
+onMounted(() => {
+  setTimeout(() => {
+    useAnimateObserver();
+    useGoToAnchor();
+  }, 100);
+});
 </script>
-
-

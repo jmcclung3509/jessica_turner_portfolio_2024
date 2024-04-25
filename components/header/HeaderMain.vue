@@ -11,7 +11,7 @@
 				},
 			]">
 			<div
-				class="container m-auto flex justify-between items-center container mx-auto">
+				class="container flex justify-between items-center  mx-auto">
 				<div
 					class="left flex items-center justify-center gap-2 lg:gap-4">
 					<template v-if="isMobile">

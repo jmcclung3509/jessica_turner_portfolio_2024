@@ -95,13 +95,7 @@
                     </div>
 
                     <div class="lg:w-1/2 hidden lg:block ml-[-20px] lg:ml-0">
-                      <div class="image-container lg:w-3/4 pb-[75%] mx-auto">
-                        <img
-                          class="w-full"
-                          src="@/assets/images/home/headshot.png"
-                          alt="Jessica Turner headshot"
-                        />
-                      </div>
+                      
                     </div>
                   </div>
                 </template>

@@ -75,6 +75,35 @@
 	transform: translateX(-100%);
   }
 
+.projectDropdown-enter-active, .projectDropdown-leave-active {
+	transition: all .5s ease-in-out;
+	transform: translateY(0);
+	opacity: 1;
+}
+.projectDropdown-enter-from, .projectDropdown-leave-to {
+	opacity: 0;
+	transform: translateY(-100%);
+}
+
+.projectOpenRight-enter-active, .projectOpenRight-leave-active {
+	transition: all .5s ease-in-out;
+	transform: translateX(0);
+	opacity: 1;
+}
+.projectOpenRight-enter-from, .projectOpenRight-leave-to {
+	opacity: 0;
+	transform: translateX(-100%);
+}
+.projectOpenLeft-enter-active, .projectOpenLeft-leave-active {
+	transition: all .5s ease-in-out;
+	transform: translateX(0);
+	opacity: 1;
+}
+.projectOpenLeft-enter-from, .projectOpenLeft-leave-to {
+	opacity: 0;
+	transform: translateX(100%);
+}
+
 .fade-out {
 	transition: opacity .5s;
 	animation: fade-out .5s ease-out;

@@ -2,6 +2,7 @@
 declare module 'vue' {
   export interface GlobalComponents {
     'ArrowLink': typeof import("../components/ArrowLink.vue")['default']
+    'Flipbox': typeof import("../components/Flipbox.vue")['default']
     'Overlay': typeof import("../components/Overlay.vue")['default']
     'Project': typeof import("../components/Project.vue")['default']
     'SingleImageText': typeof import("../components/SingleImageText.vue")['default']
@@ -32,6 +33,7 @@ declare module 'vue' {
     'Html': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
     'LazyArrowLink': typeof import("../components/ArrowLink.vue")['default']
+    'LazyFlipbox': typeof import("../components/Flipbox.vue")['default']
     'LazyOverlay': typeof import("../components/Overlay.vue")['default']
     'LazyProject': typeof import("../components/Project.vue")['default']
     'LazySingleImageText': typeof import("../components/SingleImageText.vue")['default']
@@ -65,6 +67,7 @@ declare module 'vue' {
 }
 
 export const ArrowLink: typeof import("../components/ArrowLink.vue")['default']
+export const Flipbox: typeof import("../components/Flipbox.vue")['default']
 export const Overlay: typeof import("../components/Overlay.vue")['default']
 export const Project: typeof import("../components/Project.vue")['default']
 export const SingleImageText: typeof import("../components/SingleImageText.vue")['default']
@@ -95,6 +98,7 @@ export const Head: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const LazyArrowLink: typeof import("../components/ArrowLink.vue")['default']
+export const LazyFlipbox: typeof import("../components/Flipbox.vue")['default']
 export const LazyOverlay: typeof import("../components/Overlay.vue")['default']
 export const LazyProject: typeof import("../components/Project.vue")['default']
 export const LazySingleImageText: typeof import("../components/SingleImageText.vue")['default']
