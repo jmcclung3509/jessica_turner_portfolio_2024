@@ -1,24 +1,25 @@
 <template>
-     <section class="section info py-36 space-y-4" id="info">
+  <NuxtLayout name="default">
+     <section class="section relative info py-36 space-y-4 light" id="about">
         <div class="container mx-auto flex flex-col items-start space-y-14">
-          <h2 class="text-2xl text-default-blue">Experience & Skills</h2>
+          <h2 class="text-4xl text-default-blue">Experience & Skills</h2>
           <div class="menu flex justify-start gap-7 lg:gap-14 pb-7">
             <h3
-              class="text-1.2xl font-normal text-default-blue hover:text-default-purple"
+              class="text-1.2xl font-normal text-default-blue "
               :class="{ active: data.selectedSection === 'about' }"
               @click="showSection('about')"
             >
               About
             </h3>
             <h3
-              class="text-1.2xl font-normal text-default-blue hover:text-default-purple"
+              class="text-1.2xl font-normal text-default-blue"
               :class="{ active: data.selectedSection === 'skills' }"
               @click="showSection('skills')"
             >
               Skills
             </h3>
             <h3
-              class="text-1.2xl font-normal text-default-blue hover:text-default-purple"
+              class="text-1.2xl font-normal text-default-blue" 
               :class="{ active: data.selectedSection === 'experience' }"
               @click="showSection('experience')"
             >
@@ -209,7 +210,7 @@
                             Junior Frontend Developer, September 2022-Present
                           </p>
                           <p
-                            class="text-default-purple text-[.85rem] caps font-light ml-[40px]"
+                            class="text-default-dark-blue text-[.85rem] caps font-light ml-[40px]"
                           >
                             Vue | Nuxt | WordPress
                           </p>
@@ -256,7 +257,7 @@
                           </p>
 
                           <p
-                            class="text-default-purple text-[.85rem] caps font-light ml-[40px]"
+                            class="text-default-dark-blue text-[.85rem] caps font-light ml-[40px]"
                           >
                             React | Vue | Nuxt | Adobe Creative Suite | Figma |
                             Node
@@ -277,8 +278,12 @@
           </div>
         </div>
       </section>
+      </NuxtLayout>
 </template>
 <script setup>
+definePageMeta({
+  layout: "default",
+});
 
 const data = reactive({
   selectedSection: "about",

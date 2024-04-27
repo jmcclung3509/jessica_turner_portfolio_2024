@@ -1,44 +1,42 @@
 <template>
   <main class="relative">
     <section
-      class="section fixed fold hero flex flex-col justify-center items-center h-[100vh]"
+      class="section relative fold hero flex flex-col justify-center items-center h-[100vh]"
     >
       <div
-        class="text-box relative flex justify-center text-contianer items-center flex-col space-y-7 mt-[-200px]"
+        class="text-box relative flex justify-center text-contianer items-center flex-col space-y-2 mt-[-200px]"
       >
-        <h3 class="text-6xl text-default-white font-bold text-center">Jessica Turner</h3>
-        <h1 class="text-center text-3xl caps text-default-light-purple">
-          Web Developer
+        <h1 class="text-[8rem] text-default-white text-center">
+          Jessica Turner
         </h1>
+        <h3 class="text-center text-3xl caps text-default-light-purple">
+          Web Developer
+        </h3>
       </div>
 
       <div
-        class="show-button absolute bottom-10"
-        @mouseover="hoverShowMore" @mouseleave="data.hoverEnabled ? hoverShowMore() : null"
+        class="jump-animation absolute bottom-10"
+        v-show="data.hoverEnabled"
         @click="showBottom()"
       >
-        <img class="h-[40px]" src="@/assets/images/home/pointing-down.png" />
+        <img class="h-[60px]" src="@/assets/images/home/pointing-down.png" />
       </div>
-      <Transition name="fade-in">
-        <div
-          class="absolute left-[53%] bottom-10"
-          v-show="data.showMore === true"
-        >
-          <span class="text-default-white text-xs font-normal">Show More</span>
-        </div>
-      </Transition>
     </section>
     <div class="bottom-container" id="bottom-container" v-show="data.showMore">
       <SectionAbout />
       <SectionProjects />
+      <SectionContact />
     </div>
   </main>
 </template>
 
 <script setup>
+definePageMeta({
+  layout: "nonav",
+});
+
 const config = useRuntimeConfig();
 const route = useRoute();
-const size = useScreenSize().size;
 
 const host = config.BASE_API_BROWSER_URL;
 const title = "Jessica Turner | 2024";
@@ -65,25 +63,35 @@ const data = reactive({
   hoverEnabled: true,
 });
 
-const showBottom = () => {
-	data.hoverEnabled = false;
-  data.showMore = true;
-  setTimeout(() => {
-    scrollToBottom();
-  }, 100);
-};
-console.log(data.showMore);
-const scrollToBottom = () => {
 
-  const bottomContainer = document.getElementById("bottom-container");
-  bottomContainer.scrollIntoView({ behavior: "smooth" });
-};
-const hoverShowMore = ()=>{
-	data.showMore = true;
+
+const showBottom = () => {
+	data.showMore=true
+// setTimeout(()=>{
+// 	setPageLayout("default");
+	
+// }, 100)
+
 	setTimeout(()=>{
-		data.showMore = false;
-	}, 1000)
-	}
+			scrollToBottom()
+	}, 300)
+
+
+}
+
+
+
+
+const scrollToBottom = ()=>{
+ const bottomContainer = document.getElementById("bottom-container");
+
+bottomContainer.scrollIntoView({ behavior: "smooth" });
+    
+
+}
+ 
+	
+
 
 
 
@@ -93,5 +101,7 @@ onMounted(() => {
     useAnimateObserver();
     useGoToAnchor();
   }, 100);
+ 
 });
+
 </script>

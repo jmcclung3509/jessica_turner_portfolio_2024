@@ -2,10 +2,10 @@
 	<div>
 		<Html lang="en">
 			<Body :class="`page-${route.name}`">
-				<HeaderNoNav/>
+
 				<div class="wrap flex flex-wrap">
 					<div class="wrap-inner w-full overflow-hidden">
-					<slot/>
+					<slot></slot>
 					</div>
 				</div>
 			</Body>

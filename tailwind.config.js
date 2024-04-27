@@ -59,6 +59,8 @@ module.exports = {
 			fontFamily: {
 				montserrant: ["Montserrat", "sans-serif"],
 				heptaSlab: ["Hepta Slab", "serif"],
+				sacramento: ["Sacramento", "cursive"],
+
 			},
 			container: {
 				padding: {

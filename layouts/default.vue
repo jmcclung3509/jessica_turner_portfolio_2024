@@ -2,18 +2,17 @@
 	<Html lang="en">
 		<Body :class="['page-' + route.name]">
 			<Overlay></Overlay>
-			<div
-				class="relative flex flex-wrap"
+			<div 
+				class="relative flex flex-wrap" 
 				:class="{ 'mobile-menu-open': isMobileMenuOpen }">
-				<template v-if="route.name === 'index'">
-					<HeaderDropdown @mobileMenuClick="onMobileMenuClick" />
-				</template>
-				<template v-else>
+			
+
 					<HeaderMain @mobileMenuClick="onMobileMenuClick" />
-				</template>
-				<div class="wrap-inner w-full overflow-hidden">
-					<!-- <StickySidebar /> -->
+
+				<div class="wrap-inner w-full overflow-hidden" >
+				
 					<slot />
+		
 				</div>
 			</div>
 			<HeaderMobileMenu
@@ -32,13 +31,20 @@ const { isMobile } = useScreenSize();
 
 const data = reactive({
 	mobileMenuOpen: false,
+	showBottom:false
 });
 const onMobileMenuClick = (payload) => {
+	console.log(payload)
 	data.mobileMenuOpen = payload;
 };
 const isMobileMenuOpen = computed(() => {
 	return data.mobileMenuOpen && isMobile.value;
 });
+const showButtonClicked = () => {
+	console.log('emitted')
+	data.showBottom = true;
+	console.log(data.showBottom)
+};
 
 onMounted(() => {
 	setTimeout(() => {

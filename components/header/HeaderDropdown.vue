@@ -25,19 +25,13 @@
 				<div
 					class="left flex items-center justify-center gap-2 lg:gap-4">
 					<template v-if="isMobile">
-						<Nuxt-Link
-						to="/"
-						>
-						<img  class="h-[50px]" src="@/assets/images/logos/JT-logo-light.svg" alt="Jessica Turner logo"/>
-					</Nuxt-Link>
-					</template>
-					<template v-else>
+				
 					<Nuxt-Link
 						to="/"
-						class="text-dark-purple font-light hover:text-orange">
+						class="text-default-purple font-light">
 						Jessica Turner
 					</Nuxt-Link>
-					</template>
+				
 				</div>
 
 				<template v-if="!['sm', 'md'].includes(size)">

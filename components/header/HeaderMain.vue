@@ -2,7 +2,7 @@
 
 
 		<header
-			class="main flex h-20"
+			class="main flex fixed top-0 h-20" 
 
 			:class="[
 				{
@@ -11,77 +11,66 @@
 				},
 			]">
 			<div
-				class="container flex justify-between items-center  mx-auto">
+				class="container flex justify-between items-center  mx-auto" >
 				<div
 					class="left flex items-center justify-center gap-2 lg:gap-4">
 					<template v-if="isMobile">
 						<Nuxt-Link
 						to="/"
 						>
-						<img  class="h-[50px]" src="@/assets/images/logos/JT-logo-purple.svg" alt="Jessica Turner logo"/>
+						<img  class="h-[50px] font-sacramento" src="@/assets/images/logos/JT-logo-purple.svg" alt="Jessica Turner logo"/>
 					</Nuxt-Link>
 					</template>
-<template v-else>
-					<Nuxt-Link
-						to="/"
-						class="text-dark-purple font-light hover:text-orange">
-						Jessica Turner
-					</Nuxt-Link>
-					</template>
+
 				</div>
 
 				<template v-if="!['sm', 'md'].includes(size)">
+					<div class=" left flex justify-between container">
+						<Nuxt-Link
+						to="/"
+						class="text-default-light-purple text-2xl font-light font-sacramento hover:text-default-dark-purple">
+						Jessica Turner
+					</Nuxt-Link>
 					<nav
-						class="middle main flex justify-center gap-4 items-center pt-2">
-						<ul class="flex z-10 items-center">
+						class="middle main flex justify-centeritems-center pt-2">
+						<ul class="flex z-10 items-center gap-4 ">
 							<li class="relative p-2">
 								<a
-									href="/about"
-									class="animate-underline text-dark-purple font-light orange"
+									href="#"
+									data-go-to="about"
+									class="animate-underline text-default-white font-light "
 									>About</a
 								>
 							</li>
 
 							<li class="relative p-2">
 								<a
-									href="/projects/sitezeus"
-									class="animate-underline orange text-dark-purple font-light"
+								href="#"
+									data-go-to="projects"
+									class="animate-underline text-default-white font-light "
 									>Projects</a
 								>
 							</li>
 							<li class="relative p-2">
-								<a
-									href="/resume"
-									class="animate-underline orange text-dark-purple font-light"
+								<nuxt-link
+									to="/resume"
+									class="animate-underline text-default-white font-light "
 									target="_blank"
-									>Resume</a
+									>Resume</nuxt-link
 								>
 							</li>
 
 							<li class="relative p-2">
 								<a
-									href="/contact"
-									class="animate-underline text-dark-purple font-light orange"
+								href="#"
+									data-go-to="contact"
+									class="animate-underline text-default-white font-light "
 									>Contact</a
 								>
 							</li>
 						</ul>
 					</nav>
-					<div class="right flex items-center justify-end gap-4 pt-2">
-						<a
-							href="https://github.com/jmcclung3509"
-							target="_blank">
-							<font-awesome-icon
-								class="social-icon text-1.5xl text-dark-purple  hover:text-orange transition-all"
-								:icon="['fab', 'github']"
-						/></a>
-						<a
-							href="https://www.linkedin.com/in/jessica-turner-94b549229/"
-							target="_blank">
-							<font-awesome-icon
-								class="social-icon text-1.5xl text-dark-purple hover:text-orange transition-all"
-								:icon="['fab', 'linkedin']" />
-						</a>
+				
 					</div>
 				</template>
 
@@ -116,7 +105,7 @@ const scrollPosition = useScroll().scrollPosition;
 const scrollDirectionUp = useScroll().scrollDirectionUp;
 const size = useScreenSize().size;
 const isMobile =useScreenSize().isMobile
-console.log(isMobile)
+
 
 const emits = defineEmits('mobileMenuClick');
 
@@ -130,6 +119,7 @@ const isHeaderSticky = computed(() => {
 	}
 	return false;
 });
+
 
 
 </script>
