@@ -5,7 +5,7 @@
   >
     <template v-for="(navItem, index) in navItems" :key="index">
       <a
-        v-if="navItem.hastag === true"
+        v-if="navItem.hashtag === true"
         @mouseover="openText(navItem.slug)"
         @mouseleave="data.hoveredItem = null"
         href="#"
