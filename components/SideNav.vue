@@ -9,7 +9,7 @@
         @mouseover="openText(navItem.slug)"
         @mouseleave="data.hoveredItem = null"
         href="#"
-        :data-go-to="navItem.hashtag"
+        :data-go-to="navItem.goTo"
         class="relative w-[40px] pointer-cursor nav-item flex flex-row gap-2 text-default-blue items-center justify-center py-7"
         :class="navItem.slug"
       >
