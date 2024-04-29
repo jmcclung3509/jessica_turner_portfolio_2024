@@ -1,54 +1,60 @@
 <template>
-  <section class="projects bg-default-dark py-36" id="projects">
-    <div class="inner container mx-auto space-y-14">
+  <section class="section projects bg-default-dark py-36 space-y-28 pb-0 " id="projects">
+    <div class="inner mx-auto w-full container space-y-14">
       <h2 class="text-4xl text-default-white">Projects</h2>
-      <div class="project-container flex flex-col  justify-center items-center space-y-24">
-        <Flipbox
-          imageSrc="/static/images/projects/sitezeus-homepage.webp"
-          slug="sitezeus"
+      <div
+        class="project-container flex flex-col md:flex-row md:flex-wrap justify-center items-center md:gap-14 space-y-14 md:space-y-0 mr-14 lg:mr-7"
+      >
+        <ProjectBox
+          link="https://sitezeus.com"
           title="SiteZeus"
-          description="I spearheaded a complete overhaul of the SiteZeus website, implementing a fresh color scheme, revamped layout, and enhanced user experience. This project marked a significant milestone in my career, showcasing my ownership and creative input. "
-          :tagArray="['Nuxt', 'Tailwindcss', 'CSS animation']"
-          demo="https://sitezeus.com"
+          description="Leading the complete transformation of the SiteZeus website, I introduced a fresh color palette, restructured layout, and enhanced user experience. "
+          slug="sitezeus"
+          :tagArray="['Nuxt', 'Tailwindcss', 'CSS-Animations', 'SEO']"
         />
-        <Flipbox
-        title= "SiteZeus | Under 60 seconds"
-        slug="under-60"
-        :tagArray="['Nuxt', 'REST-API', 'Tailwindcss']"
-        demo="https://sitezeus.com/under-60-seconds"
-        imageSrc="/static/images/projects/under-60-seconds.webp"
-        description="The 'SiteZeus Under 60-Second' page is a dynamic video gallery linked to YouTube via its API. Users can filter videos by categories and solutions, expand descriptions for details, and the page adjusts URLs based on selections. This allows team members to create custom links for targeted video viewing, meeting specific customer interests."
+        <ProjectBox
+          link="https://sitezeus.com/under-60-seconds"
+          title="Under 60 seconds"
+          description="The 'SiteZeus Under 60-Second' page is a dynamic video gallery on YouTube linked via its API, allowing users to filter and expand descriptions, and customize URLs for targeted video viewing."
+          slug="under-60"
+          :tagArray="['Nuxt', 'Tailwindcss', 'Rest-API']"
         />
-
-        <Flipbox
-    
+        <ProjectBox
+          link="https://insites.sitezeus.com/"
           title="Insites Blog"
+          description="Strengthened SiteZeus' WordPress blog, Insites, by optimizing usability, executing robust SEO strategies, meticulously maintaining pages, and expanding content." 
           slug="insites"
-          :tagArray="['WordPress', 'PHP', 'Vanilla-JS', 'Sass']"
-          demo="https://insites.sitezeus.com"
-          imageSrc="/static/images/projects/insites-homepage.png"
-          description="SiteZeus' blog, Insites, is constructed in WordPress using PHP, vanilla JavaScript, and Sass. My role encompasses enhancing WordPress features for improved usability, implementing SEO enhancements, and ensuring ongoing maintenance of pages yet to transition to Vue/Nuxt. Furthermore, I'm engaged in updating and expanding blog content, including creating webinar landing pages and blog posts."
+          :tagArray="['WordPress', 'PHP', 'Vanilla-JS', 'Sass', 'SEO']"
         />
-        <Flipbox   
+        <ProjectBox
+          link="https://nicks-restaurant-pacifica.vercel.app/"
           title="Nick's Restaurant"
+          description="Designed and developed the dynamic and responsive website for a locally-loved Restaurant in Pacifica, CA. The site features a menu, gallery, and contact form, with a clean, modern design and easy-to-navigate layout." 
           slug="nicks"
-          :tagArray="['Nuxt', 'Tailwindcss']"
-          demo="https://nicks-restaurant-pacifica.vercel.app/"
-          repo="https://github.com/jmcclung3509/nicks-restaurant-pacifica"
-          imageSrc="/static/images/projects/nicks-homepage.webp"
-          description="Dynamic and responsive website for a locally-loved Restaurant in Pacifica, CA. The site features a menu, gallery, and contact form, with a clean, modern design and easy-to-navigate layout. "
+          :tagArray="['Nuxt', 'Tailwindcss', 'Figma']"
         />
-        <Flipbox
-
+        <ProjectBox
+        link="https://quizzical-quiz-app.netlify.app/"
+          repo="https://github.com/jmcclung3509/"
+          title="Quizzical game"
+          description="Quizzical is a comic-book trivia game utilizing an open-source API. Players answer five multiple-choice questions, check scores, and celebrate perfect scores with confetti." 
           slug="quizzical"
-          title="Quizzical"
-          :tagArray="['React', 'React-Hooks', 'Rest-API',]"
-          demo="https://quizzical-quiz-app.netlify.app/"
-          repo="https://github.com/jmcclung3509/quizzical_react_project_scrimba"
-          imageSrc="/static/images/projects/quizzical-app.webp"
-          description="Quizzical is a trivia game fetching data from an open-source API. Players get five comic-book trivia questions with multiple-choice answers, click to guess, and can check scores, with confetti for perfect scores."
+          :tagArray="['React', 'React-hooks', 'Figma', 'Rest-Api']"
+        />
+        <ProjectBox
+        link="https://swampi-angular-app.vercel.app/home"
+          repo="https://github.com/jmcclung3509/SWAMPI_angular_app"
+          title="Star Wars Search"
+          description="Angular application that fetched data from SWAPI API and displays the results." 
+          slug="swampi"
+          :tagArray="['Angular', 'CSS-Animation', 'Rest-Api']"
         />
       </div>
+   
     </div>
+    <div class="repo  bg-default-dark-blue py-14">
+        <div class="inner container-mx-auto flex justify-center items-center"> 
+        <p class="text-default-white text-2xl text-center md:w-2/3 mx-auto"> For more projects checkout my <a class="animate-underline light-blue" href="https://github.com/jmcclung3509?tab=repositories">GitHub Repositories</a></p>
+      </div></div>
   </section>
 </template>

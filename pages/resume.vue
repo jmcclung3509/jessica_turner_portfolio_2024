@@ -9,19 +9,19 @@
           </h3>
           <div class="links flex gap-4 justify-start">
             <nuxt-link
-              class="caps text-mint font-normal hover:text-default-blue  animate-underline blue"
+              class="caps  font-normal hover:text-default-blue  animate-underline blue project"
               to="/"
             >
               Portfolio
             </nuxt-link>
             <nuxt-link
-              class="caps text-mint font-normal hover:text-default-blue animate-underline blue"
+              class="caps font-normal hover:text-default-blue animate-underline project blue"
               to="https://www.linkedin.com/in/jessica-turner-94b549229/"
             >
               Linkedin</nuxt-link
             >
             <nuxt-link
-              class="caps text-mint font-normal hover:text-default-blue  animate-underline blue"
+              class="caps font-normal hover:text-default-blue  animate-underline project blue"
               to="https://github.com/jmcclung3509"
             >
               GitHub</nuxt-link
@@ -40,9 +40,9 @@
           </p>
         </div>
         <div class="skills flex flex-col items-start ">
-            <h2 class="text-2xl text-default-blue">Skills</h2>
-          <div class="flex flex-col lg:flex-row items-start justify-start w-full">
-			<div class="inner flex justify-center flex-col  space-y-4 lg:basis-1/3 p-7">
+            <h2 class="text-2xl text-default-blue pb-7 lg:pb-0">Skills</h2>
+          <div class="flex flex-col lg:flex-row items-start justify-start w-full space-y-7 lg:space-y-0">
+			<div class="inner flex justify-center flex-col  space-y-4 lg:basis-1/3">
             <h4 class=" text-default-dark-purple text-1.2xl caps">Technologies & Languages</h4>
             <div class="skill-container flex flex-col ">
               <span
@@ -90,7 +90,7 @@
           </div>
 		
 		
-			<div class="inner flex justify-center flex-col  space-y-4 lg:basis-1/3 p-7">
+			<div class="inner flex justify-center flex-col  space-y-4 lg:basis-1/3 ">
             <h4 class=" text-default-dark-purple text-1.2xl caps">Tools & More</h4>
             <div class="skill-container flex flex-col w-full ">
               <span
@@ -138,7 +138,7 @@
             </div>
 			</div>
         
-			<div class="inner flex justify-center flex-col  space-y-4 lg:basis-1/3 p-7">
+			<div class="inner flex justify-center flex-col  space-y-4 lg:basis-1/3 ">
           <h4 class=" text-default-dark-purple text-1.2xl caps">Soft Skills</h4>
           <div class="skill-container flex flex-col  w-full">
             <span
@@ -175,7 +175,7 @@
         >
 		<h2 class="text-2xl text-default-blue ">Experience</h2>
           <div class="flex flex-col space-y-2">
-            <h4 class="caps text-default-dark-purple font-light">
+            <h4 class="caps text-default-dark-blue font-normal">
               SiteZeus | Junior Frontend Developer | September 2022- Present
             </h4>
             <ul class="resume space-y-4">
@@ -207,7 +207,7 @@
             </ul>
           </div>
           <div class="flex flex-col space-y-2">
-            <h4 class="caps text-default-dark-purple">
+            <h4 class="caps text-default-dark-blue font-normal">
               Freelance | Frontend Developer | January 2021- Present
             </h4>
             <ul class="resume space-y-4">
@@ -228,7 +228,7 @@
             </ul>
           </div>
           <div class="flex flex-col space-y-2">
-            <h4 class="caps text-default-dark-purple">
+            <h4 class="caps text-default-dark-blue font-normal">
               Nick's Restaurant | Head Server & Pastry Chef | October 2010-
               September 2022
             </h4>
@@ -237,7 +237,7 @@
         <div class="education flex flex-col items-start space-y-4">
 			<h2 class="text-2xl text-default-blue">Education</h2>
           <div class="flex flex-col space-y-2">
-            <h4 class="caps text-default-dark-purple">
+            <h4 class="caps text-default-dark-blue font-normal">
               Emory University, Atlanta, GA
             </h4>
             <p class="text-default-dark font-light">
@@ -245,7 +245,7 @@
             </p>
           </div>
           <div class="flex flex-col space-y-2">
-            <h4 class="caps text-default-dark-purple">
+            <h4 class="caps text-default-dark-blue font-normal">
               California Polytechnic State University, San Luis Obispo, CA
             </h4>
             <p class="text-default-dark font-light">Psychology, BS</p>

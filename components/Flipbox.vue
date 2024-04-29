@@ -1,5 +1,5 @@
 <template>
-  <div class="box p-4 space-y-4 w-full lg:w-1/2" :class="{'hover': flipBox=== true}" @click="flipBox=true">
+  <div class="box p-4 space-y-4 w-full  lg:w-[45%]" :class="{'hover': flipBox=== true}" @click="flipBox=true">
     <div class="inner-box " :class="props.slug">
       <div
         class="front-box border-box flex flex-col lg:flex-row justify-center items-cener space-y-4"
@@ -11,12 +11,12 @@
         class="back-box border-box text-center p-4 flex justify-center itmes-center bg-default-dark-purple flex-col space-y-7"
       >
         <div
-          class="text-container p-14 flex flex-col space-y-4 absolute z-100 top-0 bottom-0 left-0 right-0 justify-center items-start"
+          class="text-container p-7 flex flex-col space-y-4 absolute z-100 top-0 bottom-0 left-0 right-0 justify-center items-start"
         >
           <h2 class="text-default-white text-1.5xl lg:text-2xl">
             {{ props.title }}
           </h2>
-          <p class="text-default-white text-left text-xs">{{ props.description }}</p>
+          <p class="text-default-white text-left text-xs ">{{ props.description }}</p>
           <div
             class="flex flex-row flex-wrap justify-center items-center gap-4"
           >
@@ -58,6 +58,7 @@ const props = defineProps({
   imageSrc: String,
   repo: String,
   description: String,
+  reverse: Boolean,
 });
 const flipBox = ref(false);
 </script>
@@ -70,7 +71,9 @@ const flipBox = ref(false);
   box-sizing: border-box;
   border-radius: 12px;
   position: relative;
-  height: 400px;
+  aspect-ratio: 2/1;
+
+//   height: 60vh;
 
   transition: transform 0.8s;
   border-radius: 12px;

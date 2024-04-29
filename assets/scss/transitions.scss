@@ -2,15 +2,15 @@
 
 .fade-in-enter-active,
 .fade-in-leave-active {
-	transition: all .5s ease-in-out;
+	transition: all .3s ease-in-out;
 	opacity: 1;
-	transform: translateY(0);
+	transform: translateX(0);
 }
 
 .fade-in-enter-from,
 .fade-in-leave-to {
 	opacity: 0;
-	transform: translateY(100%);
+	transform: translateX(100%);
 
 }
 .fade-out-enter-active,
@@ -56,7 +56,18 @@
 	opacity: 0;
 }
 
+.small-to-big-enter-active,
+.small-to-big-leave-active {
+	transition: all .5s ease;
+	transform: scale(1);
+	opacity: 1;
+}
+.small-to-big-enter-from,
+.small-to-big-leave-to {
+	transform: scale(0);
+	opacity: 0;
 
+}
 
 
 

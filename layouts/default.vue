@@ -5,12 +5,15 @@
 			<div 
 				class="relative flex flex-wrap" 
 				:class="{ 'mobile-menu-open': isMobileMenuOpen }">
-			
+	
 
 					<HeaderMain @mobileMenuClick="onMobileMenuClick" />
+					
+	
 
-				<div class="wrap-inner w-full overflow-hidden" >
-				
+				<div class="wrap-inner w-full overflow-hidden relative" >
+			
+				<SideNav />
 					<slot />
 		
 				</div>
@@ -28,6 +31,7 @@ const route = useRoute();
 
 
 const { isMobile } = useScreenSize();
+
 
 const data = reactive({
 	mobileMenuOpen: false,

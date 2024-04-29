@@ -1,9 +1,9 @@
 <template>
-  <NuxtLayout name="default">
-     <section class="section relative info py-36 space-y-4 light" id="about">
-        <div class="container mx-auto flex flex-col items-start space-y-14">
+
+     <section class="section relative info about py-36 space-y-4 light" id="about">
+        <div class="container mx-auto  flex flex-col items-start space-y-14">
           <h2 class="text-4xl text-default-blue">Experience & Skills</h2>
-          <div class="menu flex justify-start gap-7 lg:gap-14 pb-7">
+          <div class="menu flex justify-start gap-7 lg:gap-14 pb-7  ">
             <h3
               class="text-1.2xl font-normal text-default-blue "
               :class="{ active: data.selectedSection === 'about' }"
@@ -26,16 +26,16 @@
               Experience
             </h3>
           </div>
-          <div class="contents w-full">
+          <div class="contents ">
             <transition :name="transitionDirection" mode="out-in">
               <div :key="data.selectedSection">
                 <template v-if="data.selectedSection === 'about'">
                   <div
                     id="1"
-                    class="flex items-start flex-col lg:flex-row justify-center space-y-14 lg:space-y-0"
+                    class=" flex items-start flex-col lg:flex-row justify-center space-y-14 lg:space-y-0"
                   >
                     <div
-                      class="flex flex-col w-full lg:w-1/2 items-start space-y-7"
+                      class="flex flex-col w-full items-start space-y-7  max-w-[900px] "
                     >
                       <div class="content space-y-7 pb-7">
                         <p class="text-default-dark-purple font-light">
@@ -49,7 +49,7 @@
                         </p>
 
                         <p class="text-default-dark-purple font-light">
-                          With over two years of professional experience, I've
+                          With more than two years of professional experience, I've
                           honed my skills in Vue, Nuxt, and WordPress to create
                           high-quality websites and applications. I relish
                           tackling technical challenges with creative
@@ -95,7 +95,7 @@
                       </div>
                     </div>
 
-                    <div class="lg:w-1/2 hidden lg:block ml-[-20px] lg:ml-0">
+                    <div class="hidden lg:block ml-[-20px] lg:ml-0">
                       
                     </div>
                   </div>
@@ -103,9 +103,9 @@
                 <template v-if="data.selectedSection === 'skills'">
                   <div
                     id="2"
-                    class="flex flex-col w-full lg:w-3/4 items-start space-y-7"
+                    class="flex flex-col w-full items-start space-y-7"
                   >
-                    <div class="content space-y-7">
+                    <div class="content space-y-7 max-w-[900px]">
                       <p class="text-default-dark-purple font-light text pb-7">
                         For the last two years I have been wroking primarily in
                         Vue, Nuxt, Tailwindcss and WordPress. I enjoy designing
@@ -117,14 +117,14 @@
                     </div>
                     <div class="bullet-section">
                       <ul
-                        class="flex tems-start flex-col lg:flex-row flex-wrap w-[120%] custom"
+                        class="flex tems-start flex-col lg:flex-row flex-wrap  custom"
                       >
                         <li class="w-full lg:w-1/2 pb-14 pr-7">
                           <h3 class="text-default-blue font-normal text-xs">
                             html/css
                           </h3>
                           <p
-                            class="text-default-dark-purple font-light ml-[40px]"
+                            class="text-default-dark-purple font-light ml-[40px] max-w-[350px]"
                           >
                             SCSS, Sass, Flex, Grid, Bootstrap, Tailwind,
                             Animations
@@ -135,7 +135,7 @@
                             design
                           </h3>
                           <p
-                            class="text-default-dark-purple font-light ml-[40px]"
+                            class="text-default-dark-purple font-light ml-[40px] max-w-[350px]"
                           >
                             Wireframing, Prototyping, Adobe Creative Suite,
                             Figma
@@ -146,7 +146,7 @@
                             Development
                           </h3>
                           <p
-                            class="text-default-dark-purple font-light ml-[40px]"
+                            class="text-default-dark-purple font-light ml-[40px] max-w-[350px]"
                           >
                             JavaScript(ES6+), APIs, Vue, Nuxt, WordPress,
                             Typescript, React, Node
@@ -157,7 +157,7 @@
                             Tools
                           </h3>
                           <p
-                            class="text-default-dark-purple font-light ml-[40px]"
+                            class="text-default-dark-purple font-light ml-[40px] max-w-[350px]"
                           >
                             Git/GitHub, Sourcetree, Azure, Gulp, FTP Client,
                             Postman, MongoDB
@@ -168,7 +168,7 @@
                             Soft skills
                           </h3>
                           <p
-                            class="text-default-dark-purple font-light ml-[40px]"
+                            class="text-default-dark-purple font-light ml-[40px] max-w-[350px]"
                           >
                             Creative problem solver, growth-mindset, can-do
                             attitude, skilled communicator, self-starter,
@@ -182,9 +182,9 @@
                 <template v-if="data.selectedSection === 'experience'">
                   <div
                     id="3"
-                    class="flex flex-col lg:w-3/4 w-full items-start space-y-7"
+                    class="flex flex-col w-full items-start space-y-7"
                   >
-                    <div class="content space-y-7">
+                    <div class="content space-y-7 max-w-[900px]">
                       <p class="text-default-dark-purple font-light pb-7">
                         My journey into development began in early 2021,
                         learning HTML, CSS, vanilla JavaScript, and React. As a
@@ -200,7 +200,7 @@
                     </div>
                     <div class="bullet-section">
                       <ul
-                        class="flex items-start flex-row flex-wrap w-[110%] custom"
+                        class="flex items-start flex-row flex-wrap custom"
                       >
                         <li class="w-4/5 pb-14 space-y-1">
                           <h3 class="text-default-blue font-semibold text-xs">
@@ -214,7 +214,7 @@
                           >
                             Vue | Nuxt | WordPress
                           </p>
-                          <div class="flex flex-col space-y-4 pt-4">
+                          <div class="flex flex-col space-y-4 pt-4 max-w-[900px]">
                             <p
                               class="text-default-dark-purple font-light text-xs ml-[40px]"
                             >
@@ -278,12 +278,9 @@
           </div>
         </div>
       </section>
-      </NuxtLayout>
+
 </template>
 <script setup>
-definePageMeta({
-  layout: "default",
-});
 
 const data = reactive({
   selectedSection: "about",

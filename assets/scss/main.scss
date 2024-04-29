@@ -80,6 +80,14 @@ ul.custom {
 	}
 }
 
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
 .sticky {
 	position: sticky;
 }
@@ -92,9 +100,7 @@ ul.custom {
 	position: relative;
 }
 
-.hide {
-	display: none;
-}
+
 
 .wrap-inner {
 	min-height: 100vh;
@@ -109,6 +115,14 @@ ul.custom {
 
 .container {
 	max-width: 1280px;
+
+	@screen jumbo {
+		max-width: 1920px;
+
+	}
+
+
+
 }
 
 .animate {
@@ -122,22 +136,24 @@ ul.custom {
 	}
 
 }
-.jump-animation{
+
+.jump-animation {
 	animation: jump 1.5s infinite ease-in-out;
 	transition: all .5s;
-	
+
 }
+
 //button
 .button {
 	border-radius: 5px;
-	color: $default-purple;
+	color: $default-blue;
 	font-weight: 300;
 	text-align: center;
 	white-space: nowrap;
 	transform: translateY(0);
 	transition: all .5s;
 	opacity: 0.8;
-	background: linear-gradient($default-white, $default-white) padding-box, linear-gradient(90deg, $default-purple, $default-light-purple) border-box;
+	background: linear-gradient($default-white, $default-white) padding-box, linear-gradient(90deg, $default-blue, $blue-text) border-box;
 	border: 2px solid transparent;
 	padding: 8px 12px;
 
@@ -146,18 +162,40 @@ ul.custom {
 		background: linear-gradient(transparent, transparent) padding-box, linear-gradient(90deg, $default-purple, $default-light-purple) border-box;
 		color: $default-white;
 	}
-	&.dark{
+
+	&.project {
 		color: $default-white;
-		background: linear-gradient(#100d48, #100d48) padding-box, linear-gradient(90deg, $default-purple, $default-light-purple) border-box;
-	
-	&.reverse{
-		background: linear-gradient(#100d48, #100d48) padding-box, linear-gradient(270deg, $default-purple, $default-light-purple) border-box;
-		&:hover{
-			background: linear-gradient(transparent, transparent) padding-box, linear-gradient(270deg, $default-purple, $default-light-purple) border-box;
-		
+		background: linear-gradient(#0E417B, #0E417B) padding-box, linear-gradient(270deg, $blue-text, $default-blue) border-box;
+
+		&:hover {
+			background: linear-gradient(transparent, transparent) padding-box, linear-gradient(270deg, $blue-text, $default-blue) border-box;
+
+		}
+
+		&.reverse {
+			background: linear-gradient(#0E417B, #0E417B) padding-box, linear-gradient(90deg, $blue-text, $default-blue) border-box;
+
+			&:hover {
+				background: linear-gradient(transparent, transparent) padding-box, linear-gradient(90deg, $blue-text, $default-blue) border-box;
+
+			}
 		}
 	}
-}
+
+	&.dark {
+		color: $default-white;
+		background: linear-gradient(#100d48, #100d48) padding-box, linear-gradient(90deg, $default-purple, $default-light-purple) border-box;
+
+		&.reverse {
+			background: linear-gradient(#100d48, #100d48) padding-box, linear-gradient(270deg, $default-purple, $default-light-purple) border-box;
+
+			&:hover {
+				background: linear-gradient(transparent, transparent) padding-box, linear-gradient(270deg, $default-purple, $default-light-purple) border-box;
+
+			}
+		}
+
+	}
 }
 
 
@@ -174,7 +212,7 @@ header.main {
 	z-index: 2;
 	padding-left: 0;
 	padding-right: 0;
-	
+
 
 	top: 0;
 	width: 100%;
@@ -228,7 +266,7 @@ header.main {
 	position: fixed;
 	top: 100px;
 
-	background: $default-light-purple;
+	background: $default-blue;
 	border-radius: 12px 0 0 12px;
 	overflow-y: hidden;
 	height: 100%;
@@ -237,7 +275,7 @@ header.main {
 	width: 0%;
 	transition: transform 0.5s cubic-bezier(0.76, -0.01, 0.3, 0.99);
 	top: 0;
-	width: 60%;
+	width: 80%;
 
 
 	li {
@@ -279,25 +317,29 @@ header.main {
 	text-decoration: 0;
 	border: none;
 	transition: all .3s;
-	color: $default-white;
+	color: $default-dark-blue;
 
 	&:before {
 		content: "";
 		position: absolute;
-		z-index: -1;
 		left: 0;
 		width: 0;
 		height: 2px;
 		bottom: -2px;
 		transition: width .3s ease-out;
-		background: $default-white;
+		background: $default-blue;
 	}
-	&.blue{
-		color: $default-blue;
 
-		&:before{
-			background: $default-blue;
+
+
+	&.light-blue {
+		color: $blue-text;
+
+		&:before {
+			background: $blue-text;
 		}
+
+
 	}
 
 	&:hover {
@@ -305,6 +347,8 @@ header.main {
 			width: 100%;
 		}
 	}
+
+
 
 
 }
@@ -442,11 +486,61 @@ section.projects {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+
+	.project-box {
+		.visible {
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+
+			&.sitezeus {
+				background-image: linear-gradient(rgba($default-dark-blue, 0.5),
+						rgba($default-dark-purple, 0.5)),
+					url("@/assets/images/projects/sitezeus-homepage.webp");
+
+			}
+
+			&.under-60 {
+				background-image: linear-gradient(rgba($default-dark-blue, 0.5),
+						rgba($default-dark-purple, 0.7)),
+					url("@/assets/images/projects/under-60-seconds.webp");
+
+			}
+
+			&.insites {
+				background-image: linear-gradient(rgba($default-dark-blue, 0.5),
+						rgba($default-dark-purple, 0.7)),
+					url("@/assets/images/projects/insites-homepage.webp");
+
+			}
+
+			&.nicks {
+				background-image: linear-gradient(rgba($default-dark-blue, 0.5),
+						rgba($default-dark-purple, 0.7)),
+					url("@/assets/images/projects/nicks-homepage.webp");
+
+			}
+
+			&.quizzical {
+				background-image: linear-gradient(rgba($default-dark-blue, 0.5),
+						rgba($default-dark-purple, 0.7)),
+					url("@/assets/images/projects/quizzical-app.webp");
+
+			}
+
+			&.swampi {
+				background-image: linear-gradient(rgba($default-dark-blue, 0.5),
+						rgba($default-dark-purple, 0.7)),
+					url("@/assets/images/projects/swampi.webp");
+
+			}
+		}
+	}
 }
 
-section.contact{
-    background-image: linear-gradient(rgba($default-white, .8), rgba($default-white, .8)), url("@/assets/images/home/dessert-bg.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+section.contact {
+	background-image: linear-gradient(rgba($default-white, .8), rgba($default-white, .8)), url("@/assets/images/home/dessert-bg.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
