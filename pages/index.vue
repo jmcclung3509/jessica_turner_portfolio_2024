@@ -6,10 +6,10 @@
       <div
         class="text-box relative flex justify-center text-contianer items-center flex-col space-y-2 mt-[-200px]"
       >
-        <h1 class="lg:text-[8rem] text-4xl  text-default-white text-center">
+        <h1 class="md:text-[8rem] text-4xl  text-default-white text-center">
           Jessica Turner
         </h1>
-        <h3 class="text-center text-2xl lg:text-3xl caps text-blue-text">
+        <h3 class="text-center text-2xl md:text-3xl caps text-blue-text">
           Web Developer
         </h3>
       </div>
