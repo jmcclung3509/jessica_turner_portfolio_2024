@@ -159,7 +159,7 @@ ul.custom {
 
 	&:hover {
 		transform: translateY(-5px);
-		background: linear-gradient(transparent, transparent) padding-box, linear-gradient(90deg, $default-purple, $default-light-purple) border-box;
+		background: linear-gradient(transparent, transparent) padding-box, linear-gradient(90deg, $default-blue, $blue-text) border-box;
 		color: $default-white;
 	}
 
