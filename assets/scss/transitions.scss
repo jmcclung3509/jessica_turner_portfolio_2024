@@ -1,18 +1,46 @@
 @import "@/assets/scss/variables.scss";
 
-.fade-enter-active,
-.fade-leave-active {
-	transition: all .5s ease-in-out;
+.fade-in-enter-active,
+.fade-in-leave-active {
+	transition: all .3s ease-in-out;
 	opacity: 1;
-	transform: translateY(0);
+	transform: translateX(0);
 }
 
-.fade-enter-from,
-.fade-leave-to {
+.fade-in-enter-from,
+.fade-in-leave-to {
+	opacity: 0;
+	transform: translateX(100%);
+
+}
+.fade-out-enter-active,
+.fade-out-leave-active {
+	transition: all .5s ease-in-out;
 	opacity: 0;
 	transform: translateY(-100%);
 
 }
+
+.fade-out-enter-from,
+.fade-out-leave-to {
+	opacity: 1;
+	transform: translateY(0%);
+
+}
+
+
+
+.spin-enter-active,
+.spin-leave-active {
+  transition: all .5s ease-in-out;
+  transform: rotate(1080deg); /* Three full spins (360 * 3 = 1080deg) */
+}
+
+.spin-enter-from,
+.spin-leave-to {
+  transform: rotate(0);
+}
+
 
 
 
@@ -27,6 +55,35 @@
 .zoom-out-leave-to {
 	opacity: 0;
 }
+
+.small-to-big-enter-active,
+.small-to-big-leave-active {
+	transition: all .5s ease;
+	transform: scale(1);
+	opacity: 1;
+}
+.small-to-big-enter-from,
+.small-to-big-leave-to {
+	transform: scale(0);
+	opacity: 0;
+
+}
+
+
+
+
+
+.fade-out {
+	transition: opacity .5s;
+	animation: fade-out .5s ease-out;
+}
+
+.fade-in {
+	transition: opacity .5s;
+	animation: fade-in .5s ease-in;
+}
+
+
 
 .slide-right-enter-active, .slide-right-leave-active, .slide-left-enter-active, .slide-left-leave-active {
 	transition: all .5s ease;
@@ -46,28 +103,6 @@
 	transform: translateX(-100%);
   }
 
-.fade-out {
-	transition: opacity .5s;
-	animation: fade-out .5s ease-out;
-}
-
-.fade-in {
-	transition: opacity .5s;
-	animation: fade-in .5s ease-in;
-}
-
-.fade-in-text {
-	transition: opacity 1s;
-	animation: fade-in 1s ease-in;
-}
-
-.scale-in {
-	opacity: 0;
-	transition: all .5s;
-	animation: scale-in .5s ease forwards;
-
-}
-
 
 
 
@@ -83,6 +118,25 @@
 	animation: appear 1s forwards;
 	animation-delay: 2s;
 }
+
+
+//finger pointing animation
+@keyframes jump{
+0%{
+	transform: translateY(0);
+
+}
+50%{
+	transform: translateY(-10px);
+
+}
+
+100%{
+	transform: translateY(0);
+
+}
+}
+
 
 @keyframes slide-in {
 	0% {
@@ -102,12 +156,7 @@
 }
 
 
-.slide-in-bounce {
-	transform: translateX(-200%);
-	animation: slide-in-bounce 1s forwards linear;
-	opacity: 0;
 
-}
 
 
 
@@ -174,49 +223,10 @@
 	}
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-
-	50% {
-		background-position: 100% 50%;
-	}
-
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-//HERO CIRCLE ANIMATION
 
 
-@keyframes move {
-	0% {
-		transform: translateX(0px);
-		opacity: 0;
-	}
 
-	1% {
-		opacity: 1;
-	}
 
-	50% {
-		opacity: 0.5;
-	}
 
-	100% {
-		transform: translateX(70vmin);
-		opacity: 0;
-	}
-}
-@keyframes rotating-gradient {
-    from {
-        background-position: 0 0;
 
-    }
-    to {
-        background-position: 100% 100%;
 
-    }
-}

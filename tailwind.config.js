@@ -52,6 +52,7 @@ module.exports = {
 				"default-mint": "#00f59b",
 				"default-green": "#00aa57",
 				"default-dark-green": "#00684a",
+				"blue-text": "#7DB2FA"
 							},
 			backgroundImage: {
 			
@@ -59,6 +60,8 @@ module.exports = {
 			fontFamily: {
 				montserrant: ["Montserrat", "sans-serif"],
 				heptaSlab: ["Hepta Slab", "serif"],
+				sacramento: ["Sacramento", "cursive"],
+
 			},
 			container: {
 				padding: {

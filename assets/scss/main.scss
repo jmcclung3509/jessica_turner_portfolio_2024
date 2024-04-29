@@ -14,16 +14,14 @@ body {
 	font-display: swap;
 }
 
-h1 {
-	font-family: 'Roboto', sans-serif;
+h1,
+h2 {
+	// font-family: 'Roboto', sans-serif;
+	font-family: "Sacramento", cursive;
 
 }
 
-h2,
-h3,
-h4 {
-	font-family: 'Raleway', sans-serif;
-}
+
 
 
 h2 {
@@ -69,7 +67,7 @@ ul.custom {
 			width: 15px;
 
 			border-radius: 50%;
-			border: 2px solid $default-purple;
+			border: 2px solid $default-blue;
 			display: inline-flex;
 			height: 15px;
 			margin-right: 20px;
@@ -80,6 +78,14 @@ ul.custom {
 			}
 		}
 	}
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
 }
 
 .sticky {
@@ -94,9 +100,7 @@ ul.custom {
 	position: relative;
 }
 
-.hide {
-	display: none;
-}
+
 
 .wrap-inner {
 	min-height: 100vh;
@@ -107,6 +111,18 @@ ul.custom {
 			opacity: 0.2;
 		}
 	}
+}
+
+.container {
+	max-width: 1280px;
+
+	@screen jumbo {
+		max-width: 1920px;
+
+	}
+
+
+
 }
 
 .animate {
@@ -121,43 +137,74 @@ ul.custom {
 
 }
 
+.jump-animation {
+	animation: jump 1.5s infinite ease-in-out;
+	transition: all .5s;
+
+}
+
 //button
 .button {
 	border-radius: 5px;
-	color: $default-white;
-	font-weight: 500;
+	color: $default-blue;
+	font-weight: 300;
 	text-align: center;
 	white-space: nowrap;
 	transform: translateY(0);
 	transition: all .5s;
 	opacity: 0.8;
-	background: $default-mint;
+	background: linear-gradient($default-white, $default-white) padding-box, linear-gradient(90deg, $default-blue, $blue-text) border-box;
+	border: 2px solid transparent;
+	padding: 8px 12px;
+
+	&:hover {
+		transform: translateY(-5px);
+		background: linear-gradient(transparent, transparent) padding-box, linear-gradient(90deg, $default-purple, $default-light-purple) border-box;
+		color: $default-white;
+	}
+
+	&.project {
+		color: $default-white;
+		background: linear-gradient(#0E417B, #0E417B) padding-box, linear-gradient(270deg, $blue-text, $default-blue) border-box;
+
+		&:hover {
+			background: linear-gradient(transparent, transparent) padding-box, linear-gradient(270deg, $blue-text, $default-blue) border-box;
+
+		}
+
+		&.reverse {
+			background: linear-gradient(#0E417B, #0E417B) padding-box, linear-gradient(90deg, $blue-text, $default-blue) border-box;
 
 			&:hover {
-				background: $default-light-purple;
-				color: $default-white;
-				border: 2px solid $default-dark;
-				transform: translateY(-5px);
+				background: linear-gradient(transparent, transparent) padding-box, linear-gradient(90deg, $blue-text, $default-blue) border-box;
+
+			}
+		}
+	}
+
+	&.dark {
+		color: $default-white;
+		background: linear-gradient(#100d48, #100d48) padding-box, linear-gradient(90deg, $default-purple, $default-light-purple) border-box;
+
+		&.reverse {
+			background: linear-gradient(#100d48, #100d48) padding-box, linear-gradient(270deg, $default-purple, $default-light-purple) border-box;
+
+			&:hover {
+				background: linear-gradient(transparent, transparent) padding-box, linear-gradient(270deg, $default-purple, $default-light-purple) border-box;
 
 			}
 		}
 
-
-		
-
-	
-
-
-
-.button-container {
-	.button {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		border-radius: 6px;
 	}
-	
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -165,8 +212,8 @@ header.main {
 	z-index: 2;
 	padding-left: 0;
 	padding-right: 0;
-	box-shadow: 0px 4px 4px 0px rgba(48, 31, 64, 0.3);
-	position: absolute;
+
+
 	top: 0;
 	width: 100%;
 	transition: height .3s ease;
@@ -219,7 +266,7 @@ header.main {
 	position: fixed;
 	top: 100px;
 
-	background: $default-light-purple;
+	background: $default-blue;
 	border-radius: 12px 0 0 12px;
 	overflow-y: hidden;
 	height: 100%;
@@ -228,7 +275,7 @@ header.main {
 	width: 0%;
 	transition: transform 0.5s cubic-bezier(0.76, -0.01, 0.3, 0.99);
 	top: 0;
-	width: 60%;
+	width: 80%;
 
 
 	li {
@@ -270,18 +317,29 @@ header.main {
 	text-decoration: 0;
 	border: none;
 	transition: all .3s;
-	color:$default-light-purple;
+	color: $default-dark-blue;
 
 	&:before {
 		content: "";
 		position: absolute;
-		z-index: -1;
 		left: 0;
 		width: 0;
 		height: 2px;
 		bottom: -2px;
 		transition: width .3s ease-out;
-		background: linear-gradient(to right, $default-light-purple, rgba($default-dark, .4));
+		background: $default-blue;
+	}
+
+
+
+	&.light-blue {
+		color: $blue-text;
+
+		&:before {
+			background: $blue-text;
+		}
+
+
 	}
 
 	&:hover {
@@ -290,7 +348,9 @@ header.main {
 		}
 	}
 
-	
+
+
+
 }
 
 
@@ -321,7 +381,7 @@ header.main {
 		}
 	}
 
-	
+
 
 	&:hover {
 		&:after {
@@ -340,56 +400,16 @@ header.main {
 
 section.hero {
 	height: 100vh;
-	position: relative;
+
 	background: $default-dark;
 	color: $default-white;
+	background-image: linear-gradient(rgba(6, 22, 33, 0.4), rgba(16, 13, 72, 0.5)), url("@/assets/images/home/background-image.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	top: 0;
+	width: 100vw;
 
-
-		// .circle_container {
-		// 	position: absolute;
-		// 	top: 50%;
-		// 	left: 50%;
-		// 	height: 10px;
-		// 	transform-origin: left center;
-
-
-		// 	.circle {
-		// 		position: absolute;
-		// 		z-index: 9999;
-		// 		border-radius: 100%;
-		// 		background: rgba($default-white, .25);
-		// 		left: 0;
-		// 		top: 0;
-		// 		opacity: 0;
-		// 		animation-name: move;
-		// 		animation-duration: 20s;
-		// 		animation-iteration-count: infinite;
-
-		// 		&.circle-1 {
-		// 			background: rgba($default-light-purple, .3);
-		// 		}
-
-		// 		&.circle-2 {
-		// 			background: rgba($orange, .15);
-		// 		}
-
-		// 		&.circle-3 {
-		// 			background: rgba($medium-purple, .3);
-		// 		}
-
-		// 		&.circle-4 {
-		// 			background: rgba($default-dark, .15);
-		// 		}
-
-		// 		&.circle-5 {
-		// 			background: rgba($light-peach, .3);
-		// 		}
-
-		// 		&.circle-6 {
-		// 			background: rgba($extra-$default-light-purple, .3);
-		// 		}
-		// 	}
-		// }
 
 }
 
@@ -398,7 +418,10 @@ section.hero {
 section.info {
 	margin-top: 0 !important;
 	background: $default-white;
-
+	background-image: linear-gradient(90deg, rgba($default-white, .9), rgba($default-white, .9)), url("@/assets/images/home/about-bg.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 
 	a {
 		font-weight: 300;
@@ -412,7 +435,7 @@ section.info {
 		padding-bottom: 2px;
 		width: fit-content;
 		margin: 0;
-	
+
 
 		&:before {
 			content: "";
@@ -441,19 +464,83 @@ section.info {
 }
 
 
-	.image-container {
-		position: relative;
-		transform: translateX(8%);
-		width: 60%;
+.image-container {
+	position: relative;
+	transform: translateX(8%);
+	width: 60%;
 
 
-		img {
-			position: absolute;
-			z-index: 30;
-			width: 100%;
-			border-radius: 8px;
-			box-shadow: 0px 4px 4px 0px rgba(48, 31, 64, 0.4);
+	img {
+		position: absolute;
+		z-index: 30;
+		width: 100%;
+		border-radius: 8px;
+		box-shadow: 0px 4px 4px 0px rgba(48, 31, 64, 0.4);
+	}
+
+
+}
+
+section.projects {
+	background-image: linear-gradient(90deg, rgba($default-dark-purple, .5), rgba($default-dark-purple, .5)), url("@/assets/images/home/night-sky-bg.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	.project-box {
+		.visible {
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+
+			&.sitezeus {
+				background-image: linear-gradient(rgba($default-dark-blue, 0.5),
+						rgba($default-dark-purple, 0.5)),
+					url("@/assets/images/projects/sitezeus-homepage.webp");
+
+			}
+
+			&.under-60 {
+				background-image: linear-gradient(rgba($default-dark-blue, 0.5),
+						rgba($default-dark-purple, 0.7)),
+					url("@/assets/images/projects/under-60-seconds.webp");
+
+			}
+
+			&.insites {
+				background-image: linear-gradient(rgba($default-dark-blue, 0.5),
+						rgba($default-dark-purple, 0.7)),
+					url("@/assets/images/projects/insites-homepage.webp");
+
+			}
+
+			&.nicks {
+				background-image: linear-gradient(rgba($default-dark-blue, 0.5),
+						rgba($default-dark-purple, 0.7)),
+					url("@/assets/images/projects/nicks-homepage.webp");
+
+			}
+
+			&.quizzical {
+				background-image: linear-gradient(rgba($default-dark-blue, 0.5),
+						rgba($default-dark-purple, 0.7)),
+					url("@/assets/images/projects/quizzical-app.webp");
+
+			}
+
+			&.swampi {
+				background-image: linear-gradient(rgba($default-dark-blue, 0.5),
+						rgba($default-dark-purple, 0.7)),
+					url("@/assets/images/projects/swampi.webp");
+
+			}
 		}
+	}
+}
 
-		
+section.contact {
+	background-image: linear-gradient(rgba($default-white, .8), rgba($default-white, .8)), url("@/assets/images/home/dessert-bg.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
