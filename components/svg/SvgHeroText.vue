@@ -1,6 +1,6 @@
 <template>
   <svg
-  class="animated-text"
+    class="animated-text"
     width="628"
     height="145"
     viewBox="0 0 628 145"
@@ -133,15 +133,13 @@
 const { $anime } = useNuxtApp();
 
 const animateText = () => {
-  console.log("animating");
-
   $anime({
     targets: ".animated-text path",
     strokeDashoffset: [$anime.setDashoffset, 0],
     easing: "linear",
     duration: 2500,
     delay: function (el, i) {
-      return i * 50;
+      return i * 150;
     },
     direction: "forwards",
     loop: false,
@@ -149,9 +147,6 @@ const animateText = () => {
 };
 
 onMounted(() => {
-
-
-
   animateText();
 });
 </script>

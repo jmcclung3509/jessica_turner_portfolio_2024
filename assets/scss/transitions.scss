@@ -115,11 +115,15 @@
 
 .appear {
 	opacity: 0;
+
 	animation: appear 1s forwards;
 	animation-delay: 2s;
 	@screen lg{
-		animation-delay: 4s;
+		animation-delay: 6s;
 	
+	}
+	&.hero{
+		animation-delay: 2s
 	}
 }
 
@@ -216,7 +220,7 @@
 
 @keyframes appear {
 	from {
-		transition: all 1s ease;
+		transition: all 1.5s ease;
 		transform: translateY(-10px);
 		opacity: 0;
 	}

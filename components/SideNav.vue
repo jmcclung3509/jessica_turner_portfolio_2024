@@ -1,7 +1,7 @@
 <template>
   <div
     v-if="!isMobile"
-    class="h-[100vh] nav-container hide flex flex-col justify-center z-50 items-end fixed right-0 bg-transparent px-7"
+    class="h-[100vh] side-nav nav-container hide flex flex-col justify-center z-50 items-end fixed right-0 bg-transparent px-7"
   >
     <template v-for="(navItem, index) in navItems" :key="index">
       <a

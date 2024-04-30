@@ -1,5 +1,5 @@
 <template>
-  <section class="section projects bg-default-dark py-36 space-y-28 pb-0 " id="projects">
+  <section class="section projects bg-default-dark py-36 space-y-28 pb-0 animate" id="projects">
     <div class="inner mx-auto w-full container space-y-14">
       <h2 class="text-4xl text-default-white">Projects</h2>
       <div

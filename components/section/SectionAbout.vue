@@ -1,6 +1,6 @@
 <template>
 
-     <section class="section relative info about py-36 space-y-4 light" id="about">
+     <section class="section relative info about py-36 space-y-4 light animate" id="about">
         <div class="container mx-auto  flex flex-col items-start space-y-14">
           <h2 class="text-4xl text-default-blue">Experience & Skills</h2>
           <div class="menu flex justify-start gap-7 lg:gap-14 pb-7  ">
@@ -26,13 +26,13 @@
               Experience
             </h3>
           </div>
-          <div class="contents ">
+          <div class="contents animate">
             <transition :name="transitionDirection" mode="out-in">
               <div :key="data.selectedSection">
                 <template v-if="data.selectedSection === 'about'">
                   <div
                     id="1"
-                    class=" flex items-start flex-col lg:flex-row justify-center space-y-14 lg:space-y-0"
+                    class="  flex items-start flex-col lg:flex-row justify-center space-y-14 lg:space-y-0"
                   >
                     <div
                       class="flex flex-col w-full items-start space-y-7  max-w-[900px] "

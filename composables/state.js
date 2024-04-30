@@ -71,7 +71,7 @@ export const useAnimateObserver = () => {
   const contactSection = document.querySelector(".contact");
 
   const options = {
-    threshold: 0.3,
+    threshold: 0.25,
   };
   let observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {

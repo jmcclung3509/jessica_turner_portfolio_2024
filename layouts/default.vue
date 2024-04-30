@@ -2,6 +2,10 @@
   <Html lang="en">
     <Body :class="['page-' + route.name]">
       <Overlay></Overlay>
+      <transition name="fade-out" mode="out-in">
+        <LoadSpinner v-if="data.showHideSpinner" />
+      </transition>
+
       <div
         class="relative flex flex-wrap"
         :class="{ 'mobile-menu-open': isMobileMenuOpen }"
@@ -9,11 +13,10 @@
         <HeaderMain @mobileMenuClick="onMobileMenuClick" />
 
         <div class="wrap-inner w-full overflow-hidden relative">
-          <SideNav />
+          <template v-if="!data.showHideSpinner"> <SideNav /></template>
           <slot />
         </div>
       </div>
-	 
       <HeaderMobileMenu
         @mobileMenuClick="onMobileMenuClick"
         :class="{
@@ -32,6 +35,7 @@ const { isMobile } = useScreenSize();
 const data = reactive({
   mobileMenuOpen: false,
   showBottom: false,
+  showHideSpinner: true,
 });
 const onMobileMenuClick = (payload) => {
   console.log(payload);
@@ -41,16 +45,20 @@ const isMobileMenuOpen = computed(() => {
   return data.mobileMenuOpen && isMobile.value;
 });
 const showButtonClicked = () => {
-  console.log("emitted");
   data.showBottom = true;
-  console.log(data.showBottom);
 };
-
+onBeforeMount(() => {
+  data.showHideSpinner = true;
+});
 onMounted(() => {
   setTimeout(() => {
     useAnimateObserver();
     useGoToAnchor();
   }, 100);
+
+  setTimeout(() => {
+    data.showHideSpinner = false;
+  }, 700);
 });
 onUpdated(() => {
   setTimeout(() => {

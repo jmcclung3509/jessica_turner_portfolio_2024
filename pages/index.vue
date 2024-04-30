@@ -1,8 +1,9 @@
 <template>
-  <main class="relative">
+  <main>
     <section
       id="hero"
-      class="section relative fold hero flex flex-col justify-center items-center h-[100vh]"
+      class="section relative hero flex flex-col justify-center items-center hide-page "
+      :class=" pageIsLoaded ? 'show-page' : ''"
     >
       <div
         class="text-box relative flex justify-center text-contianer items-center flex-col space-y-2 mt-[-200px]"
@@ -11,7 +12,7 @@
           <SvgHeroText />
         </template>
         <template v-else>
-          <h1 class="hero-text text-4xl text-default-white text-center">
+          <h1 class="appear hero-text text-4xl text-default-white text-center">
             Jessica Turner
           </h1>
         </template>
@@ -19,16 +20,23 @@
           Web Developer
         </h3>
       </div>
-
-      <div
-        class="jump-animation absolute bottom-10"
-        v-show="handShowing"
-        @click="scrollToBottom"
-      >
-        <img class="h-[60px]" src="@/assets/images/home/pointing-down.png" />
-      </div>
+      <transition name="fade-in">
+        <div
+          class="absolute bottom-10"
+          :class="{ 'jump-animation': handShowing }"
+          v-show="handShowing"
+          @click="scrollToBottom"
+        >
+          <img class="h-[60px]" src="@/assets/images/home/pointing-down.png" />
+        </div>
+      </transition>
     </section>
-    <div class="bottom-container" id="bottom-container">
+
+    <div
+      class=" bottom-container"
+      id="bottom-container"
+	  
+    >
       <SectionAbout />
       <SectionProjects />
       <SectionContact />
@@ -63,7 +71,8 @@ useHead({
   ],
 });
 
-const handShowing = ref(true);
+const handShowing = ref(false);
+const pageIsLoaded = ref(false);
 
 const scrollToBottom = () => {
   handShowing.value = false;
@@ -71,13 +80,58 @@ const scrollToBottom = () => {
 
   bottomContainer.scrollIntoView({ behavior: "smooth" });
 };
+onBeforeMount(() => {
+
+	
+  pageIsLoaded.value = false;
+});
 
 onMounted(() => {
   setTimeout(() => {
     useAnimateObserver();
     useGoToAnchor();
   }, 100);
+
+  setTimeout(()=>{
+	  pageIsLoaded.value=true
+  },700
+  )
+
+  setTimeout(() => {
+    handShowing.value = true;
+
+  }, 7000);
+
   window.addEventListener("scroll", updateSections);
   updateSections(); // Initial update
 });
 </script>
+<style lang="scss" scoped>
+@import "@/assets/scss/variables.scss";
+
+.hide-page {
+  opacity: 0;
+}
+  .show-page {
+    animation: page-appear 1s ease-in forwards;
+    animation-delay: 1s;
+  }
+
+section.hero {
+  &.show-page {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+@keyframes page-appear {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 1s;
+  }
+  100% {
+    opacity: 1;
+    transforom: scale(1);
+  }
+}
+</style>
