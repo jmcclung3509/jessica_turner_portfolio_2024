@@ -1,28 +1,34 @@
 <template>
   <main class="relative">
-    <section id="hero"
+    <section
+      id="hero"
       class="section relative fold hero flex flex-col justify-center items-center h-[100vh]"
     >
       <div
         class="text-box relative flex justify-center text-contianer items-center flex-col space-y-2 mt-[-200px]"
       >
-        <h1 class="md:text-[8rem] text-4xl  text-default-white text-center">
-          Jessica Turner
-        </h1>
-        <h3 class="text-center text-2xl md:text-3xl caps text-blue-text">
+        <template v-if="!isMobile">
+          <SvgHeroText />
+        </template>
+        <template v-else>
+          <h1 class="hero-text text-4xl text-default-white text-center">
+            Jessica Turner
+          </h1>
+        </template>
+        <h3 class="appear text-center text-2xl md:text-3xl caps text-blue-text">
           Web Developer
         </h3>
       </div>
 
       <div
-        class="jump-animation absolute bottom-10" v-show="handShowing"
-     @click="scrollToBottom"
-     
+        class="jump-animation absolute bottom-10"
+        v-show="handShowing"
+        @click="scrollToBottom"
       >
         <img class="h-[60px]" src="@/assets/images/home/pointing-down.png" />
       </div>
     </section>
-    <div class="bottom-container" id="bottom-container" >
+    <div class="bottom-container" id="bottom-container">
       <SectionAbout />
       <SectionProjects />
       <SectionContact />
@@ -32,6 +38,7 @@
 
 <script setup>
 const { updateSections } = useSideNavBar();
+const { isMobile } = useScreenSize();
 
 const config = useRuntimeConfig();
 const route = useRoute();
@@ -56,38 +63,21 @@ useHead({
   ],
 });
 
+const handShowing = ref(true);
 
+const scrollToBottom = () => {
+  handShowing.value = false;
+  const bottomContainer = document.getElementById("bottom-container");
 
-
-
-
-const handShowing = ref(true)
-
-
-
-const scrollToBottom = ()=>{
-handShowing.value=false
- const bottomContainer = document.getElementById("bottom-container");
-
-bottomContainer.scrollIntoView({ behavior: "smooth" });
-    
-
-}
- 
-	
-
-
-
-
+  bottomContainer.scrollIntoView({ behavior: "smooth" });
+};
 
 onMounted(() => {
   setTimeout(() => {
     useAnimateObserver();
     useGoToAnchor();
-
   }, 100);
   window.addEventListener("scroll", updateSections);
   updateSections(); // Initial update
 });
-
 </script>

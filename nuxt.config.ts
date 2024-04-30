@@ -34,6 +34,10 @@ export default defineNuxtConfig({
           rel: "stylesheet",
           href: "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
         },
+       
+      ],
+      script: [
+       
       ],
 
       noscript: [{ children: "Javascript is required" }],
@@ -57,7 +61,7 @@ export default defineNuxtConfig({
     '@fortawesome/fontawesome-svg-core/styles.css',
 
   ],
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: ["@nuxtjs/tailwindcss", '@hypernym/nuxt-anime'],
   plugins: [
     { src: '~/plugins/fontawesome.ts' }
   ],

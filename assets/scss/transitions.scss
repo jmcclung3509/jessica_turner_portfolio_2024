@@ -117,6 +117,10 @@
 	opacity: 0;
 	animation: appear 1s forwards;
 	animation-delay: 2s;
+	@screen lg{
+		animation-delay: 4s;
+	
+	}
 }
 
 
