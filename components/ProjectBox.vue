@@ -1,6 +1,6 @@
 <template>
   <div
-    class="project-box relative w-full md:w-[45%] xl:w-[30%]"
+    class="project-box relative w-full md:w-[45%] xl:w-[30%] animate"
     @mouseover="showHidden = true"
     @mouseleave="showHidden = false"
     @click="showHidden = true"

@@ -1,9 +1,9 @@
 <template>
 
-    <section id="contact" class="section contact light animate">
-        <div class="flex justify-center items-center flex-col space-y-14 pt-36 container mx-auto pb-48 w-full lg: w-1/2">
+    <section id="contact" class="section contact light animate" >
+        <div class="flex justify-center items-center flex-col space-y-14 container mx-auto py-48 w-full lg:w-2/3">
 				<div class="flex justify-center items-center flex-col space-y-4  mx-auto  ">
-					<h2 class="text-default-blue text-5xl">Let's Connect!</h2>
+					<h2 class="text-default-blue text-center  text-4xl lg:text-5xl">Let's Connect!</h2>
 					<p class="text-center text-1.2xl text-default-dark-blue  lg:w-2/3">
 						My virtual door is always open for a friendly chat or to
 						answer any questions. Feel free to drop me a line.

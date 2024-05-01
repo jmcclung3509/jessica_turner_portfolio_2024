@@ -1,9 +1,9 @@
 <template>
-  <section class="section projects bg-default-dark py-36 space-y-28 pb-0 animate" id="projects">
+  <section class="section projects bg-default-dark  pt-24 space-y-28 pb-0 " id="projects">
     <div class="inner mx-auto w-full container space-y-14">
-      <h2 class="text-4xl text-default-white">Projects</h2>
+      <h2 class=" animate text-center lg:text-left text-4xl text-default-white">Projects</h2>
       <div
-        class="project-container flex flex-col md:flex-row md:flex-wrap justify-center items-center md:gap-14 space-y-14 md:space-y-0 mr-14 lg:mr-7"
+        class="project-container  flex flex-col md:flex-row md:flex-wrap justify-center items-center md:gap-14 space-y-14 md:space-y-0  mr-0 lg:mr-7" 
       >
         <ProjectBox
           link="https://sitezeus.com"

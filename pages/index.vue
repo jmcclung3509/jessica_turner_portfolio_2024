@@ -100,7 +100,7 @@ onMounted(() => {
   setTimeout(() => {
     handShowing.value = true;
 
-  }, 7000);
+  }, 5000);
 
   window.addEventListener("scroll", updateSections);
   updateSections(); // Initial update
