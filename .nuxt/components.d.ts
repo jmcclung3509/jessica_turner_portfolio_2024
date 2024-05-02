@@ -3,6 +3,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     'ArrowLink': typeof import("../components/ArrowLink.vue")['default']
     'Flipbox': typeof import("../components/Flipbox.vue")['default']
+    'Footer': typeof import("../components/Footer.vue")['default']
     'LoadSpinner': typeof import("../components/LoadSpinner.vue")['default']
     'Overlay': typeof import("../components/Overlay.vue")['default']
     'ProjectBox': typeof import("../components/ProjectBox.vue")['default']
@@ -34,6 +35,7 @@ declare module 'vue' {
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
     'LazyArrowLink': typeof import("../components/ArrowLink.vue")['default']
     'LazyFlipbox': typeof import("../components/Flipbox.vue")['default']
+    'LazyFooter': typeof import("../components/Footer.vue")['default']
     'LazyLoadSpinner': typeof import("../components/LoadSpinner.vue")['default']
     'LazyOverlay': typeof import("../components/Overlay.vue")['default']
     'LazyProjectBox': typeof import("../components/ProjectBox.vue")['default']
@@ -68,6 +70,7 @@ declare module 'vue' {
 
 export const ArrowLink: typeof import("../components/ArrowLink.vue")['default']
 export const Flipbox: typeof import("../components/Flipbox.vue")['default']
+export const Footer: typeof import("../components/Footer.vue")['default']
 export const LoadSpinner: typeof import("../components/LoadSpinner.vue")['default']
 export const Overlay: typeof import("../components/Overlay.vue")['default']
 export const ProjectBox: typeof import("../components/ProjectBox.vue")['default']
@@ -99,6 +102,7 @@ export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const LazyArrowLink: typeof import("../components/ArrowLink.vue")['default']
 export const LazyFlipbox: typeof import("../components/Flipbox.vue")['default']
+export const LazyFooter: typeof import("../components/Footer.vue")['default']
 export const LazyLoadSpinner: typeof import("../components/LoadSpinner.vue")['default']
 export const LazyOverlay: typeof import("../components/Overlay.vue")['default']
 export const LazyProjectBox: typeof import("../components/ProjectBox.vue")['default']

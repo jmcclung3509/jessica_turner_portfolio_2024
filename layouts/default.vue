@@ -1,24 +1,18 @@
 <template>
   <Html lang="en">
     <Body :class="['page-' + route.name]">
- 
       <transition name="fade-out" mode="out-in">
         <LoadSpinner v-if="data.showHideSpinner" />
       </transition>
 
-      <div
-        class="relative flex flex-wrap"
-      
-      >
+      <div class="relative flex flex-wrap">
         <div class="wrap-inner w-full overflow-hidden relative">
           <template v-if="!data.showHideSpinner"> <SideNav /></template>
-          <slot />
+          <slot /> 
+		  <Footer />
         </div>
       </div>
-      <HeaderMobileMenu
-  
-       
-      ></HeaderMobileMenu>
+      <HeaderMobileMenu></HeaderMobileMenu>
     </Body>
   </Html>
 </template>
@@ -29,11 +23,9 @@ const route = useRoute();
 const { isMobile } = useScreenSize();
 
 const data = reactive({
-
   showBottom: false,
   showHideSpinner: true,
 });
-
 
 const showButtonClicked = () => {
   data.showBottom = true;
