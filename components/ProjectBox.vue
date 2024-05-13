@@ -14,7 +14,7 @@
         v-show="showHidden === true"
       >
         <p class="text-center text-default-white">{{ props.description }}</p>
-        <div class="tag-box flex flex-row items-center justify-center gap-2" >
+        <div class="tag-box flex flex-row items-center justify-center flex-wrap gap-2" >
             <p class="text-blue-text text-[12px] caps" v-for="(tag, i) in tagArray" :key="i">{{ tag }}</p></div>
         <div
           class="flex flex-row items-center justify-center gap-4"
@@ -23,6 +23,7 @@
           <nuxt-link
             v-show="props.repo"
             :to="props.repo"
+            target="_blank"
             class="button reverse project"
             >Repo</nuxt-link
           >

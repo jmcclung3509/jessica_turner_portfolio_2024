@@ -516,6 +516,12 @@ section.projects {
 					url("@/assets/images/projects/swampi.webp");
 
 			}
+			&.blog {
+				background-image: linear-gradient(rgba($default-dark-blue, 0.5),
+						rgba($default-dark-purple, 0.7)),
+					url("@/assets/images/projects/blog.webp");
+
+			}
 		}
 	}
 }

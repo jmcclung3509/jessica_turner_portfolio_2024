@@ -85,6 +85,12 @@ const navItems = [
     hashtag: true,
   },
   {
+    slug: "blog",
+    goTo: "https://jessica-turner-portfolio-blog.vercel.app/",
+    text: "Blog",
+    hashtag: false,
+  },
+  {
     slug: "resume",
     goTo: "/resume",
     text: "Resume",

@@ -48,6 +48,15 @@
         >
       </li>
       <li class="relative p-2" @click="handleLinkClick">
+        <a
+          href="https://jessica-turner-portfolio-blog.vercel.app/"
+          target="_blank"
+          class="hover:text-default-dark-blue hover:font-normal"
+          >Blog</a
+        >
+      </li>
+      
+      <li class="relative p-2" @click="handleLinkClick">
         <nuxt-link
           to="/resume"
           target="_blank"

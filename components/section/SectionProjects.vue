@@ -3,8 +3,9 @@
     <div class="inner mx-auto w-full container space-y-14">
       <h2 class=" animate text-center lg:text-left text-4xl text-default-white">Projects</h2>
       <div
-        class="project-container  flex flex-col md:flex-row md:flex-wrap justify-center items-center md:gap-14 space-y-14 md:space-y-0  mr-0 lg:mr-7" 
+        class="project-container  flex flex-col md:flex-row md:flex-wrap justify-center items-center md:gap-14 space-y-14 md:space-y-0  mr-0 md:mr-7" 
       >
+
         <ProjectBox
           link="https://sitezeus.com"
           title="SiteZeus"
@@ -27,12 +28,11 @@
           :tagArray="['WordPress', 'PHP', 'Vanilla-JS', 'Sass', 'SEO']"
         />
         <ProjectBox
-          link="https://nicks-restaurant-pacifica.vercel.app/"
-          title="Nick's Restaurant"
-          description="Designed and developed the dynamic and responsive website for a locally-loved Restaurant in Pacifica, CA. The site features a menu, gallery, and contact form, with a clean, modern design and easy-to-navigate layout." 
-          slug="nicks"
-          :tagArray="['Nuxt', 'Tailwindcss', 'Figma']"
-        />
+          link="https://jessica-turner-portfolio-blog.vercel.app/"
+          title="Blog"
+          description="My personal blog. The site features a blog and  GitHub repository catelog." 
+          slug="blog"
+          :tagArray="['Nuxt', 'Tailwindcss', 'Markdown', 'Prose', 'NuxtContent']"/>
         <ProjectBox
         link="https://quizzical-quiz-app.netlify.app/"
           repo="https://github.com/jmcclung3509/"
