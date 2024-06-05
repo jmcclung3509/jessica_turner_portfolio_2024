@@ -29,10 +29,11 @@
         />
         <ProjectBox
           link="https://jessica-turner-portfolio-blog.vercel.app/"
+          repo="https://github.com/jmcclung3509/jessica-turner-portfolio-blog"
           title="Blog"
-          description="My personal blog. The site features a blog and  GitHub repository catelog." 
+          description="Markdown-powered blog and portfolio, styled with Tailwind CSS. Uses Nuxt's file-based routing to efficiently manage content and a dark/light mode selector." 
           slug="blog"
-          :tagArray="['Nuxt', 'Tailwindcss', 'Markdown', 'Prose', 'NuxtContent']"/>
+          :tagArray="['Nuxt', 'Tailwind', 'Markdown', 'Prose', 'Nuxt-content', 'Light/Dark Mode']"/>
         <ProjectBox
         link="https://quizzical-quiz-app.netlify.app/"
           repo="https://github.com/jmcclung3509/"
