@@ -9,7 +9,8 @@
         <ProjectBox
           link="https://sitezeus.com"
           title="SiteZeus"
-          description="Leading the complete transformation of the SiteZeus website, I introduced a fresh color palette, restructured layout, and enhanced user experience. "
+          description="
+SiteZeus is a multipage responsive website built with Nuxt 3 and Tailwind CSS, featuring CSS animations and SEO optimization. It is consistently updated to reflect the latest trends and best practices. "
           slug="sitezeus"
           :tagArray="['Nuxt', 'Tailwindcss', 'CSS-Animations', 'SEO']"
         />
@@ -28,6 +29,14 @@
           :tagArray="['WordPress', 'PHP', 'Vanilla-JS', 'Sass', 'SEO']"
         />
         <ProjectBox
+        link="https://finance-tracker-eta-azure.vercel.app/"
+          repo="https://github.com/jmcclung3509/finance-tracker"
+          title="Finance Tracker"
+          description="Full-stack finance tracker application helps users manage their financial data effectively and securely. " 
+          slug="finance-tracker"
+          :tagArray="['Nuxt 3', 'SupaBase', 'CRUD', 'Auth', 'RLS Security', 'Supabase Storage']"
+        />
+        <ProjectBox
           link="https://jessica-turner-portfolio-blog.vercel.app/"
           repo="https://github.com/jmcclung3509/jessica-turner-portfolio-blog"
           title="Blog"
@@ -42,14 +51,14 @@
           slug="quizzical"
           :tagArray="['React', 'React-hooks', 'Figma', 'Rest-Api']"
         />
-        <ProjectBox
+        <!-- <ProjectBox
         link="https://swampi-angular-app.vercel.app/home"
           repo="https://github.com/jmcclung3509/SWAMPI_angular_app"
           title="Star Wars Search"
           description="Angular application that fetched data from SWAPI API and displays the results." 
           slug="swampi"
           :tagArray="['Angular', 'CSS-Animation', 'Rest-Api']"
-        />
+        /> -->
       </div>
    
     </div>

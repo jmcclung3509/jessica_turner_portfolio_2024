@@ -522,6 +522,11 @@ section.projects {
 					url("@/assets/images/projects/blog.webp");
 
 			}
+			&.finance-tracker{
+				background-image: linear-gradient(rgba($default-dark-blue, 0.5),
+				rgba($default-dark-purple, 0.7)),
+			url("@/assets/images/projects/finance-tracker.webp");
+			}
 		}
 	}
 }
