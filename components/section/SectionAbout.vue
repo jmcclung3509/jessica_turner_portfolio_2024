@@ -5,21 +5,21 @@
           <h2 class=" text-4xl text-default-blue">Experience & Skills</h2>
           <div class="menu flex justify-start gap-7 lg:gap-14 pb-7  ">
             <h3
-              class="text-1.2xl font-normal text-default-blue hover:cursor-pointer"
+              class="text-1.2xl font-normal text-default-blue hover:cursor-pointer animate-underline blue"
               :class="{ active: data.selectedSection === 'about' }"
               @click="showSection('about')"
             >
               About
             </h3>
             <h3
-              class="text-1.2xl font-normal text-default-blue hover:cursor-pointer"
+              class="text-1.2xl font-normal text-default-blue hover:cursor-pointer animate-underline blue"
               :class="{ active: data.selectedSection === 'skills' }"
               @click="showSection('skills')"
             >
               Skills
             </h3>
             <h3
-              class="text-1.2xl font-normal text-default-blue hover:cursor-pointer" 
+              class="text-1.2xl font-normal text-default-blue hover:cursor-pointer animate-underline blue" 
               :class="{ active: data.selectedSection === 'experience' }"
               @click="showSection('experience')"
             >
