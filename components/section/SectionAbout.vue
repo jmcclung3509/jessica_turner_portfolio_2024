@@ -211,10 +211,10 @@ Over the last three years, I have evolved into a well-rounded developer. Profici
                             <p
                               class="text-default-dark-purple font-light text-xs ml-[40px]"
                             >
-                             I spearheaded a comprehensive UI overhaul of the  <a class ="text-default-blue underline"  href="https://sitezeus.com." target="_blank">SiteZeus website,</a> enhancing the user experience and modernizing the design. I am responsible for developing new features and maintaining existing ones, ensuring a seamless user experience. </p>
+                             I spearheaded a comprehensive UI overhaul of the  <a class =" blue animate-underline"  href="https://sitezeus.com." target="_blank">SiteZeus website,</a> enhancing the user experience and modernizing the design. I am responsible for developing new features and maintaining existing ones, ensuring a seamless user experience. </p>
                                 <p
                               class="text-default-dark-purple font-light ml-[40px] text-xs"
-                            > I am also responsible for creating and maintaining the company's WordPress website,   <a class ="text-default-blue underline"
+                            > I am also responsible for creating and maintaining the company's WordPress website,   <a class ="blue animate-underline"
                                 href="https://insites.sitezeus.com/"
                                 target="_blank"
                               >Insights, </a

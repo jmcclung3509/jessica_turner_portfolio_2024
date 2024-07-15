@@ -291,7 +291,15 @@ ul.custom {
 
 
 	}
+	&.blue {
+		color: $default-blue;
 
+		&:before {
+			background: $default-blue;;
+		}
+
+
+	}
 	&:hover {
 		&:before {
 			width: 100%;
