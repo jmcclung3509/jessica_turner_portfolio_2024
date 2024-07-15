@@ -443,6 +443,15 @@ section.info {
 
 		}
 	}
+
+	
+	.bullet-section{
+		max-width: 1000px;
+		li{
+			max-width: 630px;
+		}
+	}
+
 } 
 
 
@@ -462,6 +471,8 @@ section.info {
 
 
 }
+
+
 
 section.projects {
 	background-image: linear-gradient(90deg, rgba($default-dark-purple, .5), rgba($default-dark-purple, .5)), url("@/assets/images/home/night-sky-bg.jpg");

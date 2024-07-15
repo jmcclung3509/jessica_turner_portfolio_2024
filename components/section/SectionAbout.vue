@@ -40,7 +40,7 @@
                       <div class="content flex flex-col items-center justify-center lg:justify-start space-y-7 pb-7">
                         <p class="text-default-dark-purple font-light ">
                           Hey there! I'm Jessica Turner, a developer based in
-                          the Bay Area, and I absolutely love what I do. Lucky,
+                          North Georgia, and I absolutely love what I do. Lucky,
                           right!? I find immense satisfaction in the interplay
                           between analytical development and creative design,
                           blending technical knowledge with a strong design
@@ -49,12 +49,7 @@
                         </p>
 
                         <p class="text-default-dark-purple font-light">
-                          With more than two years of professional experience, I've
-                          honed my skills in Vue, Nuxt, and WordPress to create
-                          high-quality websites and applications. I relish
-                          tackling technical challenges with creative
-                          problem-solving and staying up-to-date with the latest
-                          web technologies.
+                          With three years of frontend development experience, I've honed my skills in creating high-quality websites and applications. I relish tackling technical challenges with creative problem-solving and staying up-to-date with the latest web technologies. In my free time, you'll find me hanging out with my family, enjoying outdoor activities, watching WWE wrestling, or competing in a fierce game of cards. I am also an avid reader, baker, and novice gardener, always eager to learn and grow in all aspects of my life.
                         </p>
                       </div>
                       <div class="bullet-section">
@@ -78,7 +73,7 @@
                             <p
                               class="text-default-dark-purple ml-[40px] font-light"
                             >
-                              Bay Area, CA
+                             Cumming, GA
                             </p>
                           </li>
                           <li class="w-1/2">
@@ -88,7 +83,7 @@
                             <p
                               class="text-default-dark-purple ml-[40px] font-light"
                             >
-                              Reading, baking, crafting, card games (esp. UNO)
+                              Reading | Baking | Crafting | <br> Card games (Current fav: Exploding Kittens 🐱)
                             </p>
                           </li>
                         </ul>
@@ -106,18 +101,16 @@
                     class="flex flex-col w-full items-start space-y-7"
                   >
                     <div class="content space-y-7 max-w-[900px]">
-                      <p class="text-default-dark-purple font-light text pb-7">
-                        For the last two years I have been wroking primarily in
-                        Vue, Nuxt, Tailwindcss and WordPress. I enjoy designing
-                        layouts in Figma, and creating vector images in Adobe
-                        Illustrator. I also have experience developing webpages
-                        and simple applications in React, Typescript, Node and
-                        Express.
+                      <p class="text-default-dark-purple font-light text ">
+                    
+Over the last three years, I have evolved into a well-rounded developer. Proficient in JavaScript frameworks like Vue and Nuxt, and highly skilled with WordPress, I excel at transforming static designs into dynamic, interactive web experiences. My expertise as a CSS ninja allows me to create visually appealing and responsive interfaces. I am adept at version control, web bundling tools, and backend technologies such as Node.js, Supabase, and MongoDB. </p>
+
+<p class="text-default-dark-purple font-light text pb-7">What truly sets me apart is my insatiable curiosity and drive for continuous improvement. I am constantly exploring new technologies and methodologies to expand my skill set and deliver innovative solutions. This relentless pursuit of knowledge ensures that I am always at the forefront of web development, ready to tackle any challenge with creativity and technical proficiency.
                       </p>
                     </div>
                     <div class="bullet-section">
                       <ul
-                        class="flex tems-start flex-col lg:flex-row flex-wrap  custom"
+                        class="flex items-start flex-col lg:flex-row flex-wrap  custom"
                       >
                         <li class="w-full lg:w-1/2 pb-14 pr-7">
                           <h3 class="text-default-blue font-normal text-xs">
@@ -126,8 +119,8 @@
                           <p
                             class="text-default-dark-purple font-light ml-[40px] max-w-[350px]"
                           >
-                            SCSS, Sass, Flex, Grid, Bootstrap, Tailwind,
-                            Animations
+                            SCSS | Flex | Grid | Bootstrap | Tailwind | Nuxt UI
+                            CSS/JS Animations
                           </p>
                         </li>
                         <li class="w-full lg:w-1/2 pb-14 pr-7">
@@ -137,7 +130,7 @@
                           <p
                             class="text-default-dark-purple font-light ml-[40px] max-w-[350px]"
                           >
-                            Wireframing, Prototyping, Adobe Creative Suite,
+                            Wireframing | Prototyping | Adobe Creative Suite |
                             Figma
                           </p>
                         </li>
@@ -148,8 +141,8 @@
                           <p
                             class="text-default-dark-purple font-light ml-[40px] max-w-[350px]"
                           >
-                            JavaScript(ES6+), APIs, Vue, Nuxt, WordPress,
-                            Typescript, React, Node
+                            JavaScript(ES6+) | Vue | Nuxt | WordPress |
+                            Typescript | React | Node
                           </p>
                         </li>
                         <li class="w-full lg:w-1/2 pb-14 pr-7">
@@ -159,8 +152,8 @@
                           <p
                             class="text-default-dark-purple font-light ml-[40px] max-w-[350px]"
                           >
-                            Git/GitHub, Sourcetree, Azure, Gulp, FTP Client,
-                            Postman, MongoDB
+                            Git/GitHub | Azure | Gulp | FTP Client | Webpack |
+                            Postman | MongoDB | Supabase
                           </p>
                         </li>
                         <li class="w-full lg:w-1/2 pb-14 pr-7">
@@ -170,9 +163,9 @@
                           <p
                             class="text-default-dark-purple font-light ml-[40px] max-w-[350px]"
                           >
-                            Creative problem solver, growth-mindset, can-do
-                            attitude, skilled communicator, self-starter,
-                            excellent time-management.
+                            Saas Industries | Startup | Creative Problem Solver | Growth-mindset | Can-do
+                            Attitude | Written and Verbal Communication |  Ability to Work Independently and in a Team.
+                           
                           </p>
                         </li>
                       </ul>
@@ -204,7 +197,7 @@
                       >
                         <li class="w-4/5 pb-14 space-y-1">
                           <h3 class="text-default-blue font-semibold text-xs">
-                            Sitezeus
+                            SiteZeus
                           </h3>
                           <p class="text-default-blue font-light ml-[40px]">
                             Junior Frontend Developer, September 2022-Present
@@ -218,32 +211,14 @@
                             <p
                               class="text-default-dark-purple font-light text-xs ml-[40px]"
                             >
-                              I've successfully transformed over a dozen legacy
-                              WordPress webpages into Vue/Nuxt and created more
-                              than 10 new pages for
-                              <a href="https://sitezeus.com." target="_blank">
-                                SiteZeus</a
-                              >
-                              . In close collaboration with our visual designer,
-                              I breathe life into designs with creative
-                              user-interaction features and captivating
-                              animations.
-                            </p>
-                            <p
+                             I spearheaded a comprehensive UI overhaul of the  <a class ="text-default-blue underline"  href="https://sitezeus.com." target="_blank">SiteZeus website,</a> enhancing the user experience and modernizing the design. I am responsible for developing new features and maintaining existing ones, ensuring a seamless user experience. </p>
+                                <p
                               class="text-default-dark-purple font-light ml-[40px] text-xs"
-                            >
-                              In addition, I oversee the maintenance and
-                              expansion of our company's WordPress website
-                              <a
+                            > I am also responsible for creating and maintaining the company's WordPress website,   <a class ="text-default-blue underline"
                                 href="https://insites.sitezeus.com/"
                                 target="_blank"
-                              >
-                                Insights.</a
-                              >
-                              I've played a significant role in enhancing our
-                              SEO score and core web vitals, contributing to a
-                              20% improvement. I'm continually dedicated to
-                              enhancing the overall website experience.
+                              >Insights, </a
+                              > and have played a significant role in enhancing our SEO score and core web vitals, contributing to a 32% improvement in SiteHealth over the last 6 months.
                             </p>
                           </div>
                         </li>
